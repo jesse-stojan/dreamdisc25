@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36616.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine", "GameEngine.vcxitems", "{2419E54F-7DA2-4860-9F86-105AFA3CB4AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameClient", "GameClient.vcxitems", "{2A57566E-00AB-47D5-B7BF-A0383BEF0E90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{31656178-6642-4B5D-A6DB-5ECA7778B573}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2419E54F-7DA2-4860-9F86-105AFA3CB4AD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2A57566E-00AB-47D5-B7BF-A0383BEF0E90} = {31656178-6642-4B5D-A6DB-5ECA7778B573}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5018F4B-15CB-4171-AB70-CEB0200FB717}
+	EndGlobalSection
+EndGlobal
