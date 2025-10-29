@@ -1,15 +1,19 @@
-// Dream Disk 2025 Game Client
+// Dream Disk 2025 Game Engine
 // Author: Jesse Stojan
 // Copyright (c) 2025 - Jesse Stojan, All Rights Reserved.
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_GAME_HH
-#define DD25_GAME_HH
+#ifndef DD25_ENGINE_HH
+#define DD25_ENGINE_HH
 //////////////////////////////////////////////////////////////////
 
+#include "core/core.hh"
 
+//================================================================
+
+//TODO: Game Engine Stuff Here..
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_GAME_HH
+#endif//DD25_ENGINE_HH
 //////////////////////////////////////////////////////////////////

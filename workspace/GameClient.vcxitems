@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -14,9 +14,16 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Game\inc\Game.hh" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Game\src\Game.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Game\src\Game.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Game\inc\Game\Game.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)..\assets\gameclient-win32.ico" />
+    <Image Include="$(MSBuildThisFileDirectory)..\assets\small-win32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)..\assets\gameclient-win32.rc" />
   </ItemGroup>
 </Project>

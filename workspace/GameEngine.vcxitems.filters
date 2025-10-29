@@ -10,15 +10,51 @@
     <Filter Include="Resources">
       <UniqueIdentifier>{557c1d54-2f5c-4686-a2b4-c8035ad0c33d}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine.hh">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <Filter Include="Header Files\ui">
+      <UniqueIdentifier>{cabc5314-39ba-421c-8b3a-ccadefb3a493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gfx">
+      <UniqueIdentifier>{90c37b9d-6f72-4960-b00d-86808725ab61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\video">
+      <UniqueIdentifier>{db288848-c4ad-461a-8981-e4dfd36ef1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\physics">
+      <UniqueIdentifier>{2203c3d3-87bd-4a9f-b0ee-76aade1c4036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\data">
+      <UniqueIdentifier>{89d86227-4137-4876-98d2-fabad6b6e1dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\audio">
+      <UniqueIdentifier>{2a6c17d5-0a21-4892-9a62-0ae7a012176f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\system">
+      <UniqueIdentifier>{43649844-738a-442a-8380-82d56722dca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{1b1b434b-9ed1-4f56-b21e-e20f3707077b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\io">
+      <UniqueIdentifier>{47987fec-8976-491a-b9ec-1b6f461999c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Engine\src\Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\Engine.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\core.hh">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\Array.hh">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\concepts.hh">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

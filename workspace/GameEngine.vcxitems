@@ -14,9 +14,12 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine.hh" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Engine\src\Engine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Engine\src\Engine.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\Array.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\concepts.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\core.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\Engine.hh" />
   </ItemGroup>
 </Project>

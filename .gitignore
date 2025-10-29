@@ -844,6 +844,12 @@ cscope.po.out
 *.jif
 *.jfif
 *.jfi
+!third-party/*/*/*.jpeg
+!third-party/*/*/*.jpg
+!**/*/assets/*.jpeg
+!**/*/assets/*.jpg
+!assets/*.jpeg
+!assets/*.jpg
 
 # JPEG 2000
 *.jp2
@@ -860,29 +866,53 @@ cscope.po.out
 
 # Graphics Interchange Format
 *.gif
+!third-party/*/*/*.gif
+!**/*/assets/*.gif
+!assets/*.gif
 
 # RAW
 *.raw
+!third-party/*/*/*.raw
+!**/*/assets/*.raw
+!assets/*.raw
 
 # Web P
 *.webp
+!third-party/*/*/*.webp
+!**/*/assets/*.webp
+!assets/*.webp
 
 # Portable Network Graphics
 *.png
+!third-party/*/*/*.png
+!**/*/assets/*.png
+!assets/*.png
 
 # Animated Portable Network Graphics
 *.apng
+!third-party/*/*/*.apng
+!**/*/assets/*.apng
+!assets/*.apng
 
 # Multiple-image Network Graphics
 *.mng
+!third-party/*/*/*.mng
+!**/*/assets/*.mng
+!assets/*.mng
 
 # Tagged Image File Format
 *.tiff
 *.tif
+!third-party/*/*/*.tiff
+!**/*/assets/*.tiff
+!assets/*.tiff
 
 # Scalable Vector Graphics
 *.svg
 *.svgz
+!third-party/*/*/*.svg(z)?
+!**/*/assets/*.svg(z)?
+!assets/*.svg(z)?
 
 # Portable Document Format
 *.pdf
@@ -893,13 +923,22 @@ cscope.po.out
 # BMP
 *.bmp
 *.dib
+!third-party/*/*/*.bmp
+!**/*/assets/*.bmp
+!assets/*.bmp
 
 # ICO
 *.ico
+!third-party/*/*/*.ico
+!**/*/assets/*.ico
+!assets/*.ico
 
 # 3D Images
 *.3dm
 *.max
+!third-party/*/*/*.max
+!**/*/assets/*.max
+!assets/*.max
 
 ### CLion template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -1252,6 +1291,9 @@ StyleCopReport.xml
 *_h.h
 *.meta
 *.obj
+# Not 3D OBJ Mesh Files
+!third-party/*/*/*.obj
+!assets/*.obj
 *.iobj
 *.pch
 *.ipdb
@@ -1541,7 +1583,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
-*.code-workspace
+#*.code-workspace
 
 # Local History for Visual Studio Code
 
@@ -2359,7 +2401,7 @@ Icon
 *.msg
 *.pages
 *.rtf
-*.txt
+#*.txt
 *.wpd
 *.wps
 
@@ -2801,7 +2843,7 @@ crash.log
 *.sig
 
 pkg/
-src/
+#src/
 
 ### Audio template
 *.aif

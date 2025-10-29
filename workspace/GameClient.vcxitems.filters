@@ -12,13 +12,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Game\inc\Game.hh">
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Game\src\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Game\inc\Game\Game.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Game\src\Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <Image Include="$(MSBuildThisFileDirectory)..\assets\gameclient-win32.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\assets\small-win32.ico">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)..\assets\gameclient-win32.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

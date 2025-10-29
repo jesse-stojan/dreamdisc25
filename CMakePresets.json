@@ -1,0 +1,150 @@
+{
+	"version": 8,
+	"cmakeMinimumRequired": {
+		"major": 3,
+		"minor": 31,
+		"patch": 0
+	},
+	"configurePresets": [
+		{
+			"name": "base-dreamcast",
+			"hidden": true,
+			"toolchainFile": "cmake/toolchains/dreamcast.cmake",
+			"cacheVariables": {"DD25_TARGET_DREAMCAST": "ON"},
+			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "KallistiOS"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "base-windows",
+			"hidden": true,
+			"toolchainFile": "cmake/toolchains/windows.cmake",
+			"cacheVariables": {"DD25_TARGET_WINDOWS": "ON"},
+			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "Windows"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "base-osx",
+			"hidden": true,
+			"toolchainFile": "cmake/toolchains/osx.cmake",
+			"cacheVariables": {"DD25_TARGET_OSX": "ON"},
+			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "macOS"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "base-bsd",
+			"hidden": true,
+			"toolchainFile": "cmake/toolchains/bsd.cmake",
+			"cacheVariables": {"DD25_TARGET_BSD": "ON"},
+			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "FreeBSD"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "base-linux",
+			"hidden": true,
+			"toolchainFile": "cmake/toolchains/linux.cmake",
+			"cacheVariables": {"DD25_TARGET_LINUX": "ON"},
+			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "Linux"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-dreamcast",
+			"inherits": ["base-dreamcast"],
+			"generator": "Ninja",
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-windows-10-x64",
+			"inherits": ["base-windows"],
+			"generator": "Visual Studio 17 2022",
+			"toolset": {"value": "v143"},
+			"architecture": "x64",
+			"cacheVariables": {"TARGET_WINDOWS_10":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-windows-10-arm64",
+			"inherits": ["base-windows"],
+			"generator": "Visual Studio 17 2022",
+			"toolset": {"value": "v143"},
+			"architecture": "ARM64",
+			"cacheVariables": {"TARGET_WINDOWS_10":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-osx-x64",
+			"inherits": ["base-osx"],
+			"generator": "Xcode",
+			"toolset": {"value": "clang"},
+			"architecture": "m64",
+			"cacheVariables": {"TARGET_OSX":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-osx-arm64",
+			"inherits": ["base-osx"],
+			"generator": "Xcode",
+			"toolset": {"value": "clang"},
+			"architecture": "arm64",
+			"cacheVariables": {"TARGET_OSX":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-bsd-x64",
+			"inherits": ["base-bsd"],
+			"generator": "Ninja",
+			"architecture": "m64",
+			"toolset": {"value": "gcc"},
+			"cacheVariables": {"TARGET_BSD":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-bsd-arm64",
+			"inherits": ["base-bsd"],
+			"generator": "Ninja",
+			"architecture": "arm64",
+			"toolset": {"value": "gcc"},
+			"cacheVariables": {"TARGET_BSD":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-linux-x86",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"architecture": "m32",
+			"toolset": {"value": "gcc"},
+			"cacheVariables": {"TARGET_LINUX":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-linux-x64",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"architecture": "m64",
+			"toolset": {"value": "gcc"},
+			"cacheVariables": {"TARGET_LINUX":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-linux-arm",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"architecture": "arm",
+			"toolset": {"value": "gcc"},
+			"cacheVariables": {"TARGET_LINUX":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		},
+		{
+			"name": "config-linux-arm64",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"architecture": "arm64",
+			"toolset": {"value": "gcc"},
+			"cacheVariables": {"TARGET_LINUX":"ON"},
+			"$comment": "----------------------------------------------------------------"
+		}
+	],
+	"buildPresets": [],
+	"testPresets": [],
+	"packagePresets": [],
+	"workflowPresets": []
+}

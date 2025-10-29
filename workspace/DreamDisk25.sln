@@ -11,15 +11,127 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameClient", "GameClient.vc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{31656178-6642-4B5D-A6DB-5ECA7778B573}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "targets", "targets", "{79961430-5176-416B-A42E-A562DA4462FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "targets", "targets", "{00A9075C-C5F5-4D76-BA74-C6D0C7EC2C3E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine_win32", "GameEngine\GameEngine_win32\GameEngine_win32.vcxproj", "{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameClient_win32", "GameClient\GameClient_win32\GameClient_win32.vcxproj", "{89485C4F-0141-4E75-8528-22B389EFFDF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D} = {CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine_dreamcast", "GameEngine\GameEngine_dreamcast\GameEngine_dreamcast.vcxproj", "{2D06C21C-9E87-4E37-A71D-21D1B334E025}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameClient_dreamcast", "GameClient\GameClient_dreamcast\GameClient_dreamcast.vcxproj", "{C74D6C81-DA9F-4069-8718-66D9F2788539}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025} = {2D06C21C-9E87-4E37-A71D-21D1B334E025}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine_linux", "GameEngine\GameEngine_linux\GameEngine_linux.vcxproj", "{BBF4C79A-46E3-4950-95B5-9970338BA4C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameClient_linux", "GameClient\GameClient_linux\GameClient_linux.vcxproj", "{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}.Debug|x64.ActiveCfg = Debug|x64
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}.Debug|x64.Build.0 = Debug|x64
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}.Debug|x86.Build.0 = Debug|Win32
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}.Release|x64.ActiveCfg = Release|x64
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}.Release|x64.Build.0 = Release|x64
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}.Release|x86.ActiveCfg = Release|Win32
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D}.Release|x86.Build.0 = Release|Win32
+		{89485C4F-0141-4E75-8528-22B389EFFDF1}.Debug|x64.ActiveCfg = Debug|x64
+		{89485C4F-0141-4E75-8528-22B389EFFDF1}.Debug|x64.Build.0 = Debug|x64
+		{89485C4F-0141-4E75-8528-22B389EFFDF1}.Debug|x86.ActiveCfg = Debug|Win32
+		{89485C4F-0141-4E75-8528-22B389EFFDF1}.Debug|x86.Build.0 = Debug|Win32
+		{89485C4F-0141-4E75-8528-22B389EFFDF1}.Release|x64.ActiveCfg = Release|x64
+		{89485C4F-0141-4E75-8528-22B389EFFDF1}.Release|x64.Build.0 = Release|x64
+		{89485C4F-0141-4E75-8528-22B389EFFDF1}.Release|x86.ActiveCfg = Release|Win32
+		{89485C4F-0141-4E75-8528-22B389EFFDF1}.Release|x86.Build.0 = Release|Win32
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Debug|x64.ActiveCfg = Debug|x64
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Debug|x64.Build.0 = Debug|x64
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Debug|x64.Deploy.0 = Debug|x64
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Debug|x86.ActiveCfg = Debug|x86
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Debug|x86.Build.0 = Debug|x86
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Debug|x86.Deploy.0 = Debug|x86
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Release|x64.ActiveCfg = Release|x64
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Release|x64.Build.0 = Release|x64
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Release|x64.Deploy.0 = Release|x64
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Release|x86.ActiveCfg = Release|x86
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Release|x86.Build.0 = Release|x86
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025}.Release|x86.Deploy.0 = Release|x86
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Debug|x64.ActiveCfg = Debug|x64
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Debug|x64.Build.0 = Debug|x64
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Debug|x64.Deploy.0 = Debug|x64
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Debug|x86.ActiveCfg = Debug|x86
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Debug|x86.Build.0 = Debug|x86
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Debug|x86.Deploy.0 = Debug|x86
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Release|x64.ActiveCfg = Release|x64
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Release|x64.Build.0 = Release|x64
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Release|x64.Deploy.0 = Release|x64
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Release|x86.ActiveCfg = Release|x86
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Release|x86.Build.0 = Release|x86
+		{C74D6C81-DA9F-4069-8718-66D9F2788539}.Release|x86.Deploy.0 = Release|x86
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Debug|x64.ActiveCfg = Debug|x64
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Debug|x64.Build.0 = Debug|x64
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Debug|x64.Deploy.0 = Debug|x64
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Debug|x86.ActiveCfg = Debug|x86
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Debug|x86.Build.0 = Debug|x86
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Debug|x86.Deploy.0 = Debug|x86
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Release|x64.ActiveCfg = Release|x64
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Release|x64.Build.0 = Release|x64
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Release|x64.Deploy.0 = Release|x64
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Release|x86.ActiveCfg = Release|x86
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Release|x86.Build.0 = Release|x86
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4}.Release|x86.Deploy.0 = Release|x86
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Debug|x64.ActiveCfg = Debug|x64
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Debug|x64.Build.0 = Debug|x64
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Debug|x64.Deploy.0 = Debug|x64
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Debug|x86.ActiveCfg = Debug|x86
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Debug|x86.Build.0 = Debug|x86
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Debug|x86.Deploy.0 = Debug|x86
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Release|x64.ActiveCfg = Release|x64
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Release|x64.Build.0 = Release|x64
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Release|x64.Deploy.0 = Release|x64
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Release|x86.ActiveCfg = Release|x86
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Release|x86.Build.0 = Release|x86
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2419E54F-7DA2-4860-9F86-105AFA3CB4AD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{2A57566E-00AB-47D5-B7BF-A0383BEF0E90} = {31656178-6642-4B5D-A6DB-5ECA7778B573}
+		{79961430-5176-416B-A42E-A562DA4462FC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{00A9075C-C5F5-4D76-BA74-C6D0C7EC2C3E} = {31656178-6642-4B5D-A6DB-5ECA7778B573}
+		{CF0042C9-D1C8-43BD-8342-6CD413CFBC2D} = {79961430-5176-416B-A42E-A562DA4462FC}
+		{89485C4F-0141-4E75-8528-22B389EFFDF1} = {00A9075C-C5F5-4D76-BA74-C6D0C7EC2C3E}
+		{2D06C21C-9E87-4E37-A71D-21D1B334E025} = {79961430-5176-416B-A42E-A562DA4462FC}
+		{C74D6C81-DA9F-4069-8718-66D9F2788539} = {00A9075C-C5F5-4D76-BA74-C6D0C7EC2C3E}
+		{BBF4C79A-46E3-4950-95B5-9970338BA4C4} = {79961430-5176-416B-A42E-A562DA4462FC}
+		{5660D9A2-70C0-4DA6-BCEA-BC65CBB5DA2A} = {00A9075C-C5F5-4D76-BA74-C6D0C7EC2C3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5018F4B-15CB-4171-AB70-CEB0200FB717}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GameEngine.vcxitems*{2419e54f-7da2-4860-9f86-105afa3cb4ad}*SharedItemsImports = 9
+		GameClient.vcxitems*{2a57566e-00ab-47d5-b7bf-a0383bef0e90}*SharedItemsImports = 9
+		GameEngine.vcxitems*{2d06c21c-9e87-4e37-a71d-21d1b334e025}*SharedItemsImports = 4
+		GameClient.vcxitems*{5660d9a2-70c0-4da6-bcea-bc65cbb5da2a}*SharedItemsImports = 4
+		GameClient.vcxitems*{89485c4f-0141-4e75-8528-22b389effdf1}*SharedItemsImports = 4
+		GameEngine.vcxitems*{bbf4c79a-46e3-4950-95b5-9970338ba4c4}*SharedItemsImports = 4
+		GameClient.vcxitems*{c74d6c81-da9f-4069-8718-66d9f2788539}*SharedItemsImports = 4
+		GameEngine.vcxitems*{cf0042c9-d1c8-43bd-8342-6cd413cfbc2d}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal
