@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_GFX_I_COMMAND_QUEUE_HH
+#define DD25_ENGINE_GFX_I_COMMAND_QUEUE_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../core/core.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class ICommandQueue {
+public:
+	// Default Constructor
+	ICommandQueue() = default;
+
+	// Virtual Destructor
+	virtual ~ICommandQueue() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_GFX_I_COMMAND_QUEUE_HH
 //////////////////////////////////////////////////////////////////

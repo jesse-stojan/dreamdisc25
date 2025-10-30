@@ -37,6 +37,30 @@
     <Filter Include="Header Files\io">
       <UniqueIdentifier>{47987fec-8976-491a-b9ec-1b6f461999c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{268a2b4b-0387-4974-966e-e680572ff7d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene">
+      <UniqueIdentifier>{7b454014-ed8b-42a7-a549-7595f9c6b0a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ai">
+      <UniqueIdentifier>{dc0ee35f-008c-4e6d-acc5-f88ead563449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gfx\backend">
+      <UniqueIdentifier>{8716200b-de23-4f33-b3cc-a39b74deb43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gfx\backend\OpenGL">
+      <UniqueIdentifier>{83b759a0-87b8-4c9a-9364-20f94b28d7c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gfx\backend\PowerVR">
+      <UniqueIdentifier>{79e65a03-c028-46a3-8be6-d354f151e8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gfx\backend\Direct3D">
+      <UniqueIdentifier>{4e59fb68-52e1-429c-8cd5-ded51b495cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ui\widgets">
+      <UniqueIdentifier>{1d3982f4-ee9a-4a79-b754-1cd2d2c3255d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Engine\src\Engine.cpp">
@@ -55,6 +79,132 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\concepts.hh">
       <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\math\Vector.hh">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\math\simd.hh">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\math\Matrix.hh">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\math\Quaternion.hh">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\String.hh">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Mesh.hh">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Scene.hh">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Curve.hh">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\physics\Collider.hh">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\physics\Deflector.hh">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\physics\Motor.hh">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\physics\Physics.hh">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\physics\Ray.hh">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\physics\Force.hh">
+      <Filter>Header Files\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\ICommandQueue.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Camera.hh">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\ISceneObject.hh">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\IEntityComponent.hh">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IViewport.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IGfxBackend.hh">
+      <Filter>Header Files\gfx\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Particle.hh">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\ISprite.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\ITileset.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IVisualFX.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\ILightmap.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IFrameBuffer.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IVertexBuffer.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IBrush.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IPen.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\ILight.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IMaterial.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IShader.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\ITexture.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\IWidget.hh">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\ILabel.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IButton.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IScrollbar.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IPanel.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\ICheckbox.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IToggle.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IDropdown.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\ICursor.hh">
+      <Filter>Header Files\ui\widgets</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

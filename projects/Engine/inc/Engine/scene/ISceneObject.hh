@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_I_SCENE_OBJECT_HH
+#define DD25_ENGINE_I_SCENE_OBJECT_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "Mesh.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class ISceneObject {
+public:
+	// Default Constructor
+	ISceneObject();
+
+	// Destructor
+	~ISceneObject() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_I_SCENE_OBJECT_HH
 //////////////////////////////////////////////////////////////////

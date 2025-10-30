@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_SCENE_CURVE_HH
+#define DD25_ENGINE_SCENE_CURVE_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "Mesh.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class Curve {
+public:
+	// Default Constructor
+	Curve();
+
+	// Destructor
+	~Curve() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_SCENE_CURVE_HH
 //////////////////////////////////////////////////////////////////

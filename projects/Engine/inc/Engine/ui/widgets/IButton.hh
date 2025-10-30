@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_UI_WIDGET_I_BUTTON_HH
+#define DD25_ENGINE_UI_WIDGET_I_BUTTON_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../IWidget.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class IButton : virtual IWidget {
+public:
+	// Default Constructor
+	IButton();
+
+	// Virtual Destructor
+	virtual ~IButton() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_UI_WIDGET_I_BUTTON_HH
 //////////////////////////////////////////////////////////////////

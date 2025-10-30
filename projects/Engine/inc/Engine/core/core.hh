@@ -1,6 +1,6 @@
 // Dream Disk 2025 Game Engine
 // Author: Jesse Stojan
-// Copyright (c) 2025 - Jesse Stojan, All Rights Reserved.
+// Copyright (c) 2025 Jesse Stojan.
 #pragma once
 
 //////////////////////////////////////////////////////////////////
@@ -92,6 +92,58 @@
 #ifndef OVERRIDE
 #define OVERRIDE		override
 #endif//OVERRIDE
+
+//================================================================
+// C++ Version
+//================================================================
+
+#ifndef CXX_VERSION_26
+#define CXX_VERSION_26	202400L
+#endif//CXX_VERSION_26
+
+#ifndef CXX_VERSION_23
+#define CXX_VERSION_23	202302L
+#endif//CXX_VERSION_23
+
+#ifndef CXX_VERSION_20
+#define CXX_VERSION_20	202002L
+#endif//CXX_VERSION_20
+
+#ifndef CXX_VERSION_17
+#define CXX_VERSION_17	201703L
+#endif//CXX_VERSION_17
+
+#ifndef CXX_VERSION_14
+#define CXX_VERSION_14	201402L
+#endif//CXX_VERSION_14
+
+#ifndef CXX_VERSION_11
+#define CXX_VERSION_11	201103L
+#endif//CXX_VERSION_11
+
+#ifndef CXX_VERSION_03
+#define CXX_VERSION_03	199711L
+#endif//CXX_VERSION_03
+
+//----------------------------------------------------------------
+
+#if defined(__cplusplus)
+#if		__cplusplus >= CXX_VERSION_26
+#define CXX_VERSION		CXX_VERSION_26
+#elif	__cplusplus >= CXX_VERSION_23
+#define CXX_VERSION		CXX_VERSION_23
+#elif	__cplusplus >= CXX_VERSION_20
+#define CXX_VERSION		CXX_VERSION_20
+#elif	__cplusplus >= CXX_VERSION_17
+#define CXX_VERSION		CXX_VERSION_17
+#elif	__cplusplus >= CXX_VERSION_14
+#define CXX_VERSION		CXX_VERSION_14
+#elif	__cplusplus >= CXX_VERSION_11
+#define CXX_VERSION		CXX_VERSION_11
+#else
+#define CXX_VERSION		CXX_VERSION_03
+#endif//CXX_VERSION
+#endif//__cplusplus
 
 //================================================================
 

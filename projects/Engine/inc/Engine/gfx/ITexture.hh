@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_GFX_I_TEXTURE_HH
+#define DD25_ENGINE_GFX_I_TEXTURE_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../core/core.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class ITexture {
+public:
+	// Default Constructor
+	ITexture() = default;
+
+	// Virtual Destructor
+	virtual ~ITexture() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_GFX_I_TEXTURE_HH
 //////////////////////////////////////////////////////////////////

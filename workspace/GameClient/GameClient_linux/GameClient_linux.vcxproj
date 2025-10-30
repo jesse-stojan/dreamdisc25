@@ -120,50 +120,50 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

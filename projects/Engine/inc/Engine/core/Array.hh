@@ -1,6 +1,6 @@
 // Dream Disk 2025 Game Engine
 // Author: Jesse Stojan
-// Copyright (c) 2025 - Jesse Stojan, All Rights Reserved.
+// Copyright (c) 2025 Jesse Stojan.
 #pragma once
 
 //////////////////////////////////////////////////////////////////
@@ -20,7 +20,7 @@
 template <typename T, size_t ChunkSz = 1U>
 class Array {
 public:
-	using Type = T;
+	using value_type = T;
 
 	// Default Constructor
 	Array() {
@@ -60,9 +60,9 @@ public:
 	// sort?
 
 private:
-	size_t		mCap;
-	size_t		mLen;
-	Type*		mArr;
+	size_t				mCap;
+	size_t				mLen;
+	value_type*			mArr;
 };
 
 //////////////////////////////////////////////////////////////////

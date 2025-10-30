@@ -7,50 +7,55 @@
 	},
 	"configurePresets": [
 		{
+			"name": "base",
+			"hidden": true,
+			"binaryDir": "${sourceDir}/bin/build/${presetName}",
+			"installDir": "${sourceDir}/bin/install/${presetName}"
+		},
+		{
 			"name": "base-dreamcast",
 			"hidden": true,
-			"toolchainFile": "cmake/toolchains/dreamcast.cmake",
+			"inherits":["base"],
+			"toolchainFile": "${sourceDir}/cmake/toolchains/dreamcast.cmake",
 			"cacheVariables": {"DD25_TARGET_DREAMCAST": "ON"},
-			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "KallistiOS"},
-			"$comment": "----------------------------------------------------------------"
+			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "KallistiOS"}
 		},
 		{
 			"name": "base-windows",
 			"hidden": true,
-			"toolchainFile": "cmake/toolchains/windows.cmake",
+			"inherits":["base"],
+			"toolchainFile": "${sourceDir}/cmake/toolchains/windows.cmake",
 			"cacheVariables": {"DD25_TARGET_WINDOWS": "ON"},
-			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "Windows"},
-			"$comment": "----------------------------------------------------------------"
+			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "Windows"}
 		},
 		{
 			"name": "base-osx",
 			"hidden": true,
-			"toolchainFile": "cmake/toolchains/osx.cmake",
+			"inherits":["base"],
+			"toolchainFile": "${sourceDir}/cmake/toolchains/osx.cmake",
 			"cacheVariables": {"DD25_TARGET_OSX": "ON"},
-			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "macOS"},
-			"$comment": "----------------------------------------------------------------"
+			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "macOS"}
 		},
 		{
 			"name": "base-bsd",
 			"hidden": true,
-			"toolchainFile": "cmake/toolchains/bsd.cmake",
+			"inherits":["base"],
+			"toolchainFile": "${sourceDir}/cmake/toolchains/bsd.cmake",
 			"cacheVariables": {"DD25_TARGET_BSD": "ON"},
-			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "FreeBSD"},
-			"$comment": "----------------------------------------------------------------"
+			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "FreeBSD"}
 		},
 		{
 			"name": "base-linux",
 			"hidden": true,
-			"toolchainFile": "cmake/toolchains/linux.cmake",
+			"inherits":["base"],
+			"toolchainFile": "${sourceDir}/cmake/toolchains/linux.cmake",
 			"cacheVariables": {"DD25_TARGET_LINUX": "ON"},
-			"condition": {"type": "equals", "lhs": "$(targets)", "rhs": "Linux"},
-			"$comment": "----------------------------------------------------------------"
+			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "Linux"}
 		},
 		{
 			"name": "config-dreamcast",
 			"inherits": ["base-dreamcast"],
-			"generator": "Ninja",
-			"$comment": "----------------------------------------------------------------"
+			"generator": "Ninja"
 		},
 		{
 			"name": "config-windows-10-x64",
@@ -58,8 +63,7 @@
 			"generator": "Visual Studio 17 2022",
 			"toolset": {"value": "v143"},
 			"architecture": "x64",
-			"cacheVariables": {"TARGET_WINDOWS_10":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_WINDOWS_10":"ON"}
 		},
 		{
 			"name": "config-windows-10-arm64",
@@ -67,8 +71,7 @@
 			"generator": "Visual Studio 17 2022",
 			"toolset": {"value": "v143"},
 			"architecture": "ARM64",
-			"cacheVariables": {"TARGET_WINDOWS_10":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_WINDOWS_10":"ON"}
 		},
 		{
 			"name": "config-osx-x64",
@@ -76,8 +79,7 @@
 			"generator": "Xcode",
 			"toolset": {"value": "clang"},
 			"architecture": "m64",
-			"cacheVariables": {"TARGET_OSX":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_OSX":"ON"}
 		},
 		{
 			"name": "config-osx-arm64",
@@ -85,8 +87,7 @@
 			"generator": "Xcode",
 			"toolset": {"value": "clang"},
 			"architecture": "arm64",
-			"cacheVariables": {"TARGET_OSX":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_OSX":"ON"}
 		},
 		{
 			"name": "config-bsd-x64",
@@ -94,8 +95,7 @@
 			"generator": "Ninja",
 			"architecture": "m64",
 			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_BSD":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_BSD":"ON"}
 		},
 		{
 			"name": "config-bsd-arm64",
@@ -103,8 +103,7 @@
 			"generator": "Ninja",
 			"architecture": "arm64",
 			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_BSD":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_BSD":"ON"}
 		},
 		{
 			"name": "config-linux-x86",
@@ -112,8 +111,7 @@
 			"generator": "Ninja",
 			"architecture": "m32",
 			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_LINUX":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_LINUX":"ON"}
 		},
 		{
 			"name": "config-linux-x64",
@@ -121,8 +119,7 @@
 			"generator": "Ninja",
 			"architecture": "m64",
 			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_LINUX":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_LINUX":"ON"}
 		},
 		{
 			"name": "config-linux-arm",
@@ -130,8 +127,7 @@
 			"generator": "Ninja",
 			"architecture": "arm",
 			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_LINUX":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_LINUX":"ON"}
 		},
 		{
 			"name": "config-linux-arm64",
@@ -139,8 +135,7 @@
 			"generator": "Ninja",
 			"architecture": "arm64",
 			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_LINUX":"ON"},
-			"$comment": "----------------------------------------------------------------"
+			"cacheVariables": {"TARGET_LINUX":"ON"}
 		}
 	],
 	"buildPresets": [],

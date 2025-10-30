@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_GFX_I_MATERIAL_HH
+#define DD25_ENGINE_GFX_I_MATERIAL_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../core/core.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class IMaterial {
+public:
+	// Default Constructor
+	IMaterial() = default;
+
+	// Virtual Destructor
+	virtual ~IMaterial() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_GFX_I_MATERIAL_HH
 //////////////////////////////////////////////////////////////////

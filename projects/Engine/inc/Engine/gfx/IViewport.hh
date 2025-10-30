@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_GFX_I_VIEWPORT_HH
+#define DD25_ENGINE_GFX_I_VIEWPORT_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../core/core.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class IViewport {
+public:
+	// Default Constructor
+	IViewport() = default;
+
+	// Virtual Destructor
+	virtual ~IViewport() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_GFX_I_VIEWPORT_HH
 //////////////////////////////////////////////////////////////////

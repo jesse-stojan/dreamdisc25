@@ -1,6 +1,6 @@
 // Dream Disk 2025 Game Client
 // Author: Jesse Stojan
-// Copyright (c) 2025 - Jesse Stojan, All Rights Reserved.
+// Copyright (c) 2025 Jesse Stojan.
 #pragma once
 
 //////////////////////////////////////////////////////////////////

@@ -1,3 +1,6 @@
+// Dream Disk 2025 Game Engine
+// Author: Jesse Stojan
+// Copyright (c) 2025 Jesse Stojan.
 #include <Engine/Engine.hh>
 
 #if defined(_MSC_VER)

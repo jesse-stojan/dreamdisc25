@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_GFX_I_FRAME_BUFFER_HH
+#define DD25_ENGINE_GFX_I_FRAME_BUFFER_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../core/core.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class IFrameBuffer {
+public:
+	// Default Constructor
+	IFrameBuffer() = default;
+
+	// Virtual Destructor
+	virtual ~IFrameBuffer() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_GFX_I_FRAME_BUFFER_HH
 //////////////////////////////////////////////////////////////////

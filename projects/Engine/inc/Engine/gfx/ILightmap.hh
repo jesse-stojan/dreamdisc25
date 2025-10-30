@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_GFX_I_LIGHTMAP_HH
+#define DD25_ENGINE_GFX_I_LIGHTMAP_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../core/core.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class ILightmap {
+public:
+	// Default Constructor
+	ILightmap() = default;
+
+	// Virtual Destructor
+	virtual ~ILightmap() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_GFX_I_LIGHTMAP_HH
 //////////////////////////////////////////////////////////////////

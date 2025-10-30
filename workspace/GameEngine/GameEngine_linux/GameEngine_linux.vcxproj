@@ -133,12 +133,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
       <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RelaxIEEE>true</RelaxIEEE>
     </ClCompile>
@@ -150,12 +150,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
       <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RelaxIEEE>true</RelaxIEEE>
     </ClCompile>
@@ -167,12 +167,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
       <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RelaxIEEE>true</RelaxIEEE>
     </ClCompile>
@@ -184,12 +184,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
       <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RelaxIEEE>true</RelaxIEEE>
     </ClCompile>
@@ -201,12 +201,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
       <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RelaxIEEE>true</RelaxIEEE>
     </ClCompile>
@@ -218,12 +218,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
       <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RelaxIEEE>true</RelaxIEEE>
     </ClCompile>
@@ -235,12 +235,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
       <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RelaxIEEE>true</RelaxIEEE>
     </ClCompile>
@@ -252,12 +252,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <ClCompile>
-      <CLanguageStandard>C23 (-std=c23)</CLanguageStandard>
+      <CLanguageStandard>C17 (-std=c17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <ClCompile>
-      <CppLanguageStandard>c++23</CppLanguageStandard>
+      <CppLanguageStandard>c++20</CppLanguageStandard>
       <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RelaxIEEE>true</RelaxIEEE>
     </ClCompile>

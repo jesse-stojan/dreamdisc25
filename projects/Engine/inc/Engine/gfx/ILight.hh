@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_GFX_I_LIGHT_HH
+#define DD25_ENGINE_GFX_I_LIGHT_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../core/core.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class ILight {
+public:
+	// Default Constructor
+	ILight() = default;
+
+	// Virtual Destructor
+	virtual ~ILight() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_GFX_I_LIGHT_HH
 //////////////////////////////////////////////////////////////////

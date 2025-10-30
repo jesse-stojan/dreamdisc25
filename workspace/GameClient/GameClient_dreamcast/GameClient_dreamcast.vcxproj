@@ -144,12 +144,12 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
-      <CLanguageStandard>C23 (GNU Dialect) (-std=gnu23)</CLanguageStandard>
+      <CLanguageStandard>C17 (GNU Dialect) (-std=gnu17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
-      <CppLanguageStandard>gnu++23</CppLanguageStandard>
+      <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
@@ -163,12 +163,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
-      <CLanguageStandard>C23 (GNU Dialect) (-std=gnu23)</CLanguageStandard>
+      <CLanguageStandard>C17 (GNU Dialect) (-std=gnu17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
-      <CppLanguageStandard>gnu++23</CppLanguageStandard>
+      <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
@@ -182,12 +182,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
-      <CLanguageStandard>C23 (GNU Dialect) (-std=gnu23)</CLanguageStandard>
+      <CLanguageStandard>C17 (GNU Dialect) (-std=gnu17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
-      <CppLanguageStandard>gnu++23</CppLanguageStandard>
+      <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
@@ -201,12 +201,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
-      <CLanguageStandard>C23 (GNU Dialect) (-std=gnu23)</CLanguageStandard>
+      <CLanguageStandard>C17 (GNU Dialect) (-std=gnu17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
-      <CppLanguageStandard>gnu++23</CppLanguageStandard>
+      <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
@@ -220,12 +220,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <CLanguageStandard>C23 (GNU Dialect) (-std=gnu23)</CLanguageStandard>
+      <CLanguageStandard>C17 (GNU Dialect) (-std=gnu17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <CppLanguageStandard>gnu++23</CppLanguageStandard>
+      <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
@@ -239,12 +239,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <CLanguageStandard>C23 (GNU Dialect) (-std=gnu23)</CLanguageStandard>
+      <CLanguageStandard>C17 (GNU Dialect) (-std=gnu17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <CppLanguageStandard>gnu++23</CppLanguageStandard>
+      <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
@@ -258,12 +258,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <CLanguageStandard>C23 (GNU Dialect) (-std=gnu23)</CLanguageStandard>
+      <CLanguageStandard>C17 (GNU Dialect) (-std=gnu17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <CppLanguageStandard>gnu++23</CppLanguageStandard>
+      <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
@@ -277,12 +277,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <ClCompile>
-      <CLanguageStandard>C23 (GNU Dialect) (-std=gnu23)</CLanguageStandard>
+      <CLanguageStandard>C17 (GNU Dialect) (-std=gnu17)</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <ClCompile>
-      <CppLanguageStandard>gnu++23</CppLanguageStandard>
+      <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>

@@ -4,16 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_UI_WIDGET_I_TOGGLE_HH
+#define DD25_ENGINE_UI_WIDGET_I_TOGGLE_HH
 //////////////////////////////////////////////////////////////////
 
-#include "core/core.hh"
+#include "../IWidget.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class IToggle : virtual IWidget {
+public:
+	// Default Constructor
+	IToggle();
+
+	// Virtual Destructor
+	virtual ~IToggle() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_UI_WIDGET_I_TOGGLE_HH
 //////////////////////////////////////////////////////////////////

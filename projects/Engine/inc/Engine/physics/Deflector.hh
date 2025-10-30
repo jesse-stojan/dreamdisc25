@@ -1,19 +1,27 @@
 // Dream Disk 2025 Game Engine
 // Author: Jesse Stojan
-// Copyright (c) 2025 Jesse Stojan.
+// Copyright (c) 2025 - Jesse Stojan.
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_HH
-#define DD25_ENGINE_HH
+#ifndef DD25_ENGINE_PHYSICS_DEFLECTOR_HH
+#define DD25_ENGINE_PHYSICS_DEFLECTOR_HH
 //////////////////////////////////////////////////////////////////
-
-#include "core/core.hh"
 
 //================================================================
 
-//TODO: Game Engine Stuff Here..
+class Deflector {
+public:
+	// Default Constructor
+	Deflector();
+
+	// Destructor
+	~Deflector() noexcept;
+
+private:
+
+};
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_HH
+#endif//DD25_ENGINE_PHYSICS_DEFLECTOR_HH
 //////////////////////////////////////////////////////////////////
