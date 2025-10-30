@@ -19,6 +19,8 @@
 
 template <typename T, size_t ChunkSz = 1U>
 class Array {
+	static_assert(!std::is_void_v<T>, "<T> must not be void");
+	static_assert((ChunkSz < 1), "<T, ChunkSz> must not be greater than 0");
 public:
 	using value_type = T;
 
@@ -47,7 +49,6 @@ public:
 
 	// Get Capacity (number of allocated Elements that can be used without resizing)
 	constexpr inline size_t capacity() const noexcept { return mCap; }
-
 
 	// push
 	// push_front

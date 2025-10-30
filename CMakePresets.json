@@ -63,7 +63,7 @@
 			"generator": "Visual Studio 17 2022",
 			"toolset": {"value": "v143"},
 			"architecture": "x64",
-			"cacheVariables": {"TARGET_WINDOWS_10":"ON"}
+			"cacheVariables": {"TARGET_WINDOWS_10":"ON", "TARGET_WINDOWS_VERSION":"0x0A00"}
 		},
 		{
 			"name": "config-windows-10-arm64",
@@ -71,7 +71,7 @@
 			"generator": "Visual Studio 17 2022",
 			"toolset": {"value": "v143"},
 			"architecture": "ARM64",
-			"cacheVariables": {"TARGET_WINDOWS_10":"ON"}
+			"cacheVariables": {"TARGET_WINDOWS_10":"ON", "TARGET_WINDOWS_VERSION":"0x0A00"}
 		},
 		{
 			"name": "config-osx-x64",
@@ -138,7 +138,9 @@
 			"cacheVariables": {"TARGET_LINUX":"ON"}
 		}
 	],
-	"buildPresets": [],
+	"buildPresets": [
+		{"name": "build-windows-10-x64", "configurePreset": "config-windows-10-x64", "configuration": "Release", "jobs": 0}
+	],
 	"testPresets": [],
 	"packagePresets": [],
 	"workflowPresets": []

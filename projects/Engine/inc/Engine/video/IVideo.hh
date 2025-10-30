@@ -1,0 +1,29 @@
+// Dream Disk 2025 Game Engine
+// Author: Jesse Stojan
+// Copyright (c) 2025 Jesse Stojan.
+#pragma once
+
+//////////////////////////////////////////////////////////////////
+#ifndef DD25_ENGINE_I_VIDEO_HH
+#define DD25_ENGINE_I_VIDEO_HH
+//////////////////////////////////////////////////////////////////
+
+#include "../core/core.hh"
+
+//================================================================
+
+class IVideo {
+public:
+	// Default Constructor
+	IVideo();
+
+	// Virtual Destructor
+	virtual ~IVideo() noexcept;
+
+private:
+
+};
+
+//////////////////////////////////////////////////////////////////
+#endif//DD25_ENGINE_I_VIDEO_HH
+//////////////////////////////////////////////////////////////////

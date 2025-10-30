@@ -63,7 +63,11 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IDropdown.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\ILabel.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IPanel.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IProgress.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IRadio.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IScrollbar.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\ISlider.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IToggle.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\video\IVideo.hh" />
   </ItemGroup>
 </Project>

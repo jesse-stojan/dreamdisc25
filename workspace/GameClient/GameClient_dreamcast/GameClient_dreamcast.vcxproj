@@ -47,42 +47,34 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
-    <UseCompiler>true</UseCompiler>
     <UseOfStl>libstdc++_static</UseOfStl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <UseCompiler>true</UseCompiler>
     <UseOfStl>libstdc++_static</UseOfStl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
-    <UseCompiler>true</UseCompiler>
     <UseOfStl>libstdc++_static</UseOfStl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <UseCompiler>true</UseCompiler>
     <UseOfStl>libstdc++_static</UseOfStl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
-    <UseCompiler>true</UseCompiler>
     <UseOfStl>libstdc++_static</UseOfStl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <UseCompiler>true</UseCompiler>
     <UseOfStl>libstdc++_static</UseOfStl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
-    <UseCompiler>true</UseCompiler>
     <UseOfStl>libstdc++_static</UseOfStl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
-    <UseCompiler>true</UseCompiler>
     <UseOfStl>libstdc++_static</UseOfStl>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -97,48 +89,64 @@
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\projects\Game\inc</IncludePath>
     <LibraryPath>$(SolutionDir)..\projects\Engine\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Game\src</SourcePath>
+    <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <TargetExt />
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\projects\Game\inc</IncludePath>
     <LibraryPath>$(SolutionDir)..\projects\Engine\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Game\src</SourcePath>
+    <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <TargetExt />
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\projects\Game\inc</IncludePath>
     <LibraryPath>$(SolutionDir)..\projects\Engine\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Game\src</SourcePath>
+    <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <TargetExt />
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\projects\Game\inc</IncludePath>
     <LibraryPath>$(SolutionDir)..\projects\Engine\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Game\src</SourcePath>
+    <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetExt />
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\projects\Game\inc</IncludePath>
     <LibraryPath>$(SolutionDir)..\projects\Engine\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Game\src</SourcePath>
+    <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetExt />
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\projects\Game\inc</IncludePath>
     <LibraryPath>$(SolutionDir)..\projects\Engine\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Game\src</SourcePath>
+    <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <TargetExt />
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\projects\Game\inc</IncludePath>
     <LibraryPath>$(SolutionDir)..\projects\Engine\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Game\src</SourcePath>
+    <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <TargetExt />
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\projects\Game\inc</IncludePath>
     <LibraryPath>$(SolutionDir)..\projects\Engine\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Game\src</SourcePath>
+    <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <ItemGroup>
   </ItemGroup>

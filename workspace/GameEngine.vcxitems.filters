@@ -212,5 +212,17 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IGfxBackend.hh">
       <Filter>Header Files\gfx</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\video\IVideo.hh">
+      <Filter>Header Files\video</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IProgress.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\ISlider.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IRadio.hh">
+      <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

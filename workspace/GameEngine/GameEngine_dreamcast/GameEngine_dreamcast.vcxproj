@@ -89,48 +89,56 @@
     <LibraryPath>$(SolutionDir)..\third-party\sh4zam\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Engine\src</SourcePath>
     <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\third-party\sh4zam\inc;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\third-party\sh4zam\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Engine\src</SourcePath>
     <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\third-party\sh4zam\inc;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\third-party\sh4zam\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Engine\src</SourcePath>
     <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\third-party\sh4zam\inc;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\third-party\sh4zam\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Engine\src</SourcePath>
     <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\third-party\sh4zam\inc;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\third-party\sh4zam\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Engine\src</SourcePath>
     <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\third-party\sh4zam\inc;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\third-party\sh4zam\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Engine\src</SourcePath>
     <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\third-party\sh4zam\inc;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\third-party\sh4zam\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Engine\src</SourcePath>
     <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <IncludePath>$(SolutionDir)..\projects\Engine\inc;$(SolutionDir)..\third-party\sh4zam\inc;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\third-party\sh4zam\lib</LibraryPath>
     <SourcePath>$(SolutionDir)..\projects\Engine\src</SourcePath>
     <MultiProcNumber>32</MultiProcNumber>
+    <ValidateArchitecture>false</ValidateArchitecture>
   </PropertyGroup>
   <ItemGroup>
   </ItemGroup>
