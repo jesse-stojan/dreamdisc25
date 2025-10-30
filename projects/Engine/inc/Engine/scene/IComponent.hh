@@ -4,26 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_SCENE_I_ENTITY_COMPONENT_HH
-#define DD25_ENGINE_SCENE_I_ENTITY_COMPONENT_HH
+#ifndef DD25_ENGINE_SCENE_I_COMPONENT_HH
+#define DD25_ENGINE_SCENE_I_COMPONENT_HH
 //////////////////////////////////////////////////////////////////
 
 #include "Mesh.hh"
 
 //================================================================
 
-class IEntityComponent {
+class IComponent {
 public:
 	// Default Constructor
-	IEntityComponent() = default;
+	IComponent() = default;
 
 	// Virtual Destructor
-	virtual ~IEntityComponent() noexcept = default;
+	virtual ~IComponent() noexcept = default;
 
 private:
 
 };
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_SCENE_I_ENTITY_COMPONENT_HH
+#endif//DD25_ENGINE_SCENE_I_COMPONENT_HH
 //////////////////////////////////////////////////////////////////

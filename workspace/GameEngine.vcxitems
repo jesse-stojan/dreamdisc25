@@ -22,6 +22,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\core.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\String.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\Engine.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\Color.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IBillboard.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IBrush.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\ICommandQueue.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IFrameBuffer.hh" />
@@ -49,7 +51,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\physics\Ray.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Camera.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Curve.hh" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\IEntityComponent.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\IComponent.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Particle.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\ISceneObject.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Mesh.hh" />

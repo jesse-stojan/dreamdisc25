@@ -131,14 +131,11 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\ISceneObject.hh">
       <Filter>Header Files\scene</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\IEntityComponent.hh">
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\IComponent.hh">
       <Filter>Header Files\scene</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IViewport.hh">
       <Filter>Header Files\gfx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IGfxBackend.hh">
-      <Filter>Header Files\gfx\backend</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\scene\Particle.hh">
       <Filter>Header Files\scene</Filter>
@@ -205,6 +202,15 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\ICursor.hh">
       <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IBillboard.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\Color.hh">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IGfxBackend.hh">
+      <Filter>Header Files\gfx</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

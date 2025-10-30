@@ -10,6 +10,23 @@
 
 #include "../core/core.hh"
 
+#include "Color.hh"
+#include "IBillboard.hh"
+#include "IBrush.hh"
+#include "ICommandQueue.hh"
+#include "IFrameBuffer.hh"
+#include "ILight.hh"
+#include "ILightmap.hh"
+#include "IMaterial.hh"
+#include "IPen.hh"
+#include "IShader.hh"
+#include "ISprite.hh"
+#include "ITexture.hh"
+#include "ITileset.hh"
+#include "IVertexBuffer.hh"
+#include "IViewport.hh"
+#include "IVisualFX.hh"
+
 //================================================================
 
 class IGfxBackend {

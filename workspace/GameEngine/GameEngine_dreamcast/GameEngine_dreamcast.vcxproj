@@ -48,42 +48,34 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseCompiler>true</UseCompiler>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseCompiler>true</UseCompiler>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseCompiler>true</UseCompiler>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseCompiler>true</UseCompiler>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseCompiler>true</UseCompiler>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseCompiler>true</UseCompiler>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseCompiler>true</UseCompiler>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseCompiler>true</UseCompiler>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
@@ -151,11 +143,12 @@
     <ClCompile>
       <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <RelaxIEEE>true</RelaxIEEE>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <OptimizeforMemory>true</OptimizeforMemory>
@@ -170,11 +163,12 @@
     <ClCompile>
       <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <RelaxIEEE>true</RelaxIEEE>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <OptimizeforMemory>true</OptimizeforMemory>
@@ -189,11 +183,12 @@
     <ClCompile>
       <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <RelaxIEEE>true</RelaxIEEE>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <OptimizeforMemory>true</OptimizeforMemory>
@@ -208,11 +203,12 @@
     <ClCompile>
       <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <RelaxIEEE>true</RelaxIEEE>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <OptimizeforMemory>true</OptimizeforMemory>
@@ -227,11 +223,12 @@
     <ClCompile>
       <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <RelaxIEEE>true</RelaxIEEE>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <OptimizeforMemory>true</OptimizeforMemory>
@@ -246,11 +243,12 @@
     <ClCompile>
       <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <RelaxIEEE>true</RelaxIEEE>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <OptimizeforMemory>true</OptimizeforMemory>
@@ -265,11 +263,12 @@
     <ClCompile>
       <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <RelaxIEEE>true</RelaxIEEE>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <OptimizeforMemory>true</OptimizeforMemory>
@@ -284,11 +283,12 @@
     <ClCompile>
       <CppLanguageStandard>gnu++20</CppLanguageStandard>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DD25_ENGINE_EXPORT=1;__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Disabled</ExceptionHandling>
       <RelaxIEEE>true</RelaxIEEE>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <OptimizeforMemory>true</OptimizeforMemory>

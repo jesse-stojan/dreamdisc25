@@ -153,9 +153,10 @@
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\third-party\sh4zam\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -172,9 +173,10 @@
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\third-party\sh4zam\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -191,9 +193,10 @@
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\third-party\sh4zam\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -210,9 +213,10 @@
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\third-party\sh4zam\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -229,9 +233,10 @@
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\third-party\sh4zam\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -248,9 +253,10 @@
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\third-party\sh4zam\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -267,9 +273,10 @@
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\third-party\sh4zam\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -286,9 +293,10 @@
       <ExceptionHandling>Disabled</ExceptionHandling>
       <LinkTimeOptimization>true</LinkTimeOptimization>
       <ShowIncludes>false</ShowIncludes>
-      <PreprocessorDefinitions>__SH__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__SH__=1;__SH4__=1;__DREAMCAST__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\c++\15.1.0;$(DREAMSDK_HOME)\opt\toolchains\dc\sh-elf\sh-elf\include\kos;$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\third-party\sh4zam\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
