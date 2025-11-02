@@ -1,0 +1,13 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2021"
+authors = []
+description = "Rust engine crate for DreamDisk25 prototype"
+
+[lib]
+name = "engine"
+path = "src/lib.rs"
+
+[dependencies]
+log = "0.4"

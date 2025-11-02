@@ -1,0 +1,4 @@
+[workspace]
+members = ["engine", "game"]
+
+description = "Rust scaffold for DreamDisk25 (engine + game prototype)"
