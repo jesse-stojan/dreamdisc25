@@ -4,29 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_GFX_COLOR_HH
-#define DD25_ENGINE_GFX_COLOR_HH
+#ifndef DD25_ENGINE_GFX_BACKEND_I_OPEN_GL_ES_HH
+#define DD25_ENGINE_GFX_BACKEND_I_OPEN_GL_ES_HH
 //////////////////////////////////////////////////////////////////
+
+#include "../../IGfxBackend.hh"
 
 //================================================================
 
-template <
-	typename	CRTP,
-	typename	T,
-	size_t		N
->
-class Color {
+class IGBEOpenGLES : virtual IGfxBackend {
 public:
 	// Default Constructor
-	Color() = default;
+	IGBEOpenGLES() = default;
 
-	// Destructor
-	~Color() noexcept;
+	// Virtual Destructor
+	virtual ~IGBEOpenGLES() noexcept;
 
 private:
 
 };
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_GFX_COLOR_HH
+#endif//DD25_ENGINE_GFX_BACKEND_I_OPEN_GL_ES_HH
 //////////////////////////////////////////////////////////////////

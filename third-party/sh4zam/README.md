@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/gyrovorbis/sh4zam">
-    <img src="doc/logo.png" alt="SH4ZAM">
+    <img src="./docs/logo.png" alt="SH4ZAM">
   </a>
   <h3 align="center"><strong>SH4ZAM!</strong></h3>
   <p align="center">

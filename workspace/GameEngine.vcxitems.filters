@@ -61,6 +61,9 @@
     <Filter Include="Header Files\ui\widgets">
       <UniqueIdentifier>{1d3982f4-ee9a-4a79-b754-1cd2d2c3255d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gfx\backend\OpenGLES">
+      <UniqueIdentifier>{bda9c670-0e9d-4dc1-9b0f-c6eb8ab82f6e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\projects\Engine\src\Engine.cpp">
@@ -223,6 +226,18 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\ui\widgets\IRadio.hh">
       <Filter>Header Files\ui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\backend\PowerVR\IGBEPowerVR.hh">
+      <Filter>Header Files\gfx\backend\PowerVR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\backend\Direct3D\IGBEDirect3D9.hh">
+      <Filter>Header Files\gfx\backend\Direct3D</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\backend\OpenGL\IGBEOpenGL.hh">
+      <Filter>Header Files\gfx\backend\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\backend\OpenGLES\IGBEOpenGLES.hh">
+      <Filter>Header Files\gfx\backend\OpenGLES</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

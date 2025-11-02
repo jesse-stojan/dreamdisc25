@@ -15,12 +15,15 @@
 #include <type_traits>
 #include <typeinfo>
 
-#if CXX_VERSION >= CXX_VERSION_20
+#if CXX_VERSION >= CXX_VERSION_20 && defined(__cpp_concepts)
+#define CXX_HAS_CONCEPTS		1
 #include <concepts>
-#endif//C++20 or higher
+#else
+#define CXX_HAS_CONCEPTS		0
+#endif//{ CXX_VERSION >= C++20 } else { CXX_VERSION < C++20 }
 
 template <typename First, typename ...Next>
-constexpr bool matches_type = ((std::is_same_v<First, Next> || std::is_base_of_v<First, Next>) || ...);
+constexpr bool matches_type = ((std::is_same_v<First, Next> || (std::is_base_of_v<First, Next>)) || ...);
 
 //----------------------------------------------------------------
 
@@ -95,7 +98,7 @@ concept auto_int = matches_type<T,
 //----------------------------------------------------------------
 
 template <typename T>
-concept auto_decimal = matches_type <T,
+concept auto_decimal = matches_type<T,
 	float,
 	double,
 	long double
@@ -104,7 +107,7 @@ concept auto_decimal = matches_type <T,
 //----------------------------------------------------------------
 
 template <typename T>
-concept auto_number = matches_type <T,
+concept auto_number = matches_type<T,
 	char,
 	short,
 	int,
@@ -131,6 +134,55 @@ concept auto_number = matches_type <T,
 >;
 
 //----------------------------------------------------------------
+//#if CXX_HAS_CONCEPTS
+
+// template <typename T>
+// constexpr bool auto_number_t = matches_type<T,
+// 	char,
+// 	short,
+// 	int,
+// 	long,
+// 	long int,
+// 	long long,
+// 	long long int,
+// 	unsigned char,
+// 	unsigned short,
+// 	unsigned int,
+// 	unsigned long,
+// 	unsigned long int,
+// 	unsigned long long,
+// 	unsigned long long int,
+// 	signed char,
+// 	signed short,
+// 	signed int,
+// 	signed long,
+// 	signed long int,
+// 	signed long long,
+// 	signed long long int,
+// 	float,
+// 	double,
+// 	long double
+// >;
+
+template <typename T, std::enable_if_t<std::is_arithmetic_v<T>, int> = 0>
+class Example {
+public:
+	Example() : a(0) {}
+	~Example() noexcept { a = 0; }
+	T get() const noexcept { return a; }
+private:
+	T a;
+};
+
+struct BurnerStruct {};
+
+void test() {
+	Example<int> a;
+	Example<const char*> b;
+	Example<BurnerStruct> c;
+}
+
+//#endif//!CXX_HAS_CONCEPTS
 
 //////////////////////////////////////////////////////////////////
 #endif//DD25_ENGINE_CONCEPTS_HH

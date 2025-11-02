@@ -8,7 +8,7 @@
 # TODO: Fill out the README.md, include documentation under `/docs`.
 ```
 
-## [License](LICENSE.txt)
+## [License](./LICENSE)
 ```
 MIT License
 

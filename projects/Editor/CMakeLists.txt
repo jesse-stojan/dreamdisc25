@@ -1,4 +1,4 @@
-set(TGT "DD25Engine")
+set(TGT "DD25Editor")
 
 project(${TGT} LANGUAGES C CXX)
 
@@ -8,9 +8,7 @@ set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 #----------------------------------------------------------------
 # Include target platform cmake files
 #----------------------------------------------------------------
-if      (DD25_TARGET_DREAMCAST)
-	include("${CMAKE_CURRENT_LIST_DIR}/cmake/dreamcast.cmake")
-elseif  (DD25_TARGET_WINDOWS)
+if      (DD25_TARGET_WINDOWS)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/windows.cmake")
 elseif  (DD25_TARGET_OSX)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/osx.cmake")
@@ -20,8 +18,6 @@ elseif  (DD25_TARGET_BSD)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/bsd.cmake")
 endif()
 
-#target_include_directories(${TGT} PUBLIC ${HDR_DIR})
-
-add_library(${TGT} SHARED
-	${SRC_DIR}/Engine.cpp
+add_executable(${TGT}
+	${SRC_DIR}/Editor.cpp
 )

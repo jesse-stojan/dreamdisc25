@@ -104,7 +104,7 @@ protected:
 template <auto_number T>
 struct vec2 : public VecN<vec2<T>, T, 2> {
 public:
-	using VecN::VecN;
+	using VecN<vec2<T>,T,2>::VecN;
 	using value_type = T;
 
 	// Default Constructor

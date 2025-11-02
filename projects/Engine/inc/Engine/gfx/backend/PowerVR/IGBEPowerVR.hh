@@ -4,29 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_GFX_COLOR_HH
-#define DD25_ENGINE_GFX_COLOR_HH
+#ifndef DD25_ENGINE_GFX_BACKEND_I_POWER_VR_HH
+#define DD25_ENGINE_GFX_BACKEND_I_POWER_VR_HH
 //////////////////////////////////////////////////////////////////
+
+#include "../../IGfxBackend.hh"
 
 //================================================================
 
-template <
-	typename	CRTP,
-	typename	T,
-	size_t		N
->
-class Color {
+class IGBEPowerVR : virtual IGfxBackend {
 public:
 	// Default Constructor
-	Color() = default;
+	IGBEPowerVR() = default;
 
-	// Destructor
-	~Color() noexcept;
+	// Virtual Destructor
+	virtual ~IGBEPowerVR() noexcept;
 
 private:
 
 };
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_GFX_COLOR_HH
+#endif//DD25_ENGINE_GFX_BACKEND_I_POWER_VR_HH
 //////////////////////////////////////////////////////////////////

@@ -1,5 +1,5 @@
 {
-	"version": 8,
+	"version": 10,
 	"cmakeMinimumRequired": {
 		"major": 3,
 		"minor": 31,
@@ -13,133 +13,410 @@
 			"installDir": "${sourceDir}/bin/install/${presetName}"
 		},
 		{
+			"name": "msvc-vs-2015",
+			"hidden": true,
+			"generator": "Visual Studio 14 2015",
+			"toolset": "v140",
+			"cacheVariables": {"MSVC_TOOLSET":"v140"}
+		},
+		{
+			"name": "msvc-vs-2017",
+			"hidden": true,
+			"generator": "Visual Studio 15 2017",
+			"toolset": "v141",
+			"cacheVariables": {"MSVC_TOOLSET":"v141"}
+		},
+		{
+			"name": "msvc-vs-2019",
+			"hidden": true,
+			"generator": "Visual Studio 16 2019",
+			"toolset": "v142",
+			"cacheVariables": {"MSVC_TOOLSET":"v142"}
+		},
+		{
+			"name": "msvc-vs-2022",
+			"hidden": true,
+			"generator": "Visual Studio 17 2022",
+			"toolset": "v143",
+			"cacheVariables": {"MSVC_TOOLSET":"v143"}
+		},
+		{
+			"name": "msvc-vs-2026",
+			"hidden": true,
+			"generator": "Visual Studio 18 2026"
+		},
+		{
 			"name": "base-dreamcast",
 			"hidden": true,
-			"inherits":["base"],
+			"inherits": ["base"],
 			"toolchainFile": "${sourceDir}/cmake/toolchains/dreamcast.cmake",
-			"cacheVariables": {"DD25_TARGET_DREAMCAST": "ON"},
-			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "KallistiOS"}
+			"cacheVariables": {"DD25_TARGET_DREAMCAST": "ON"}
 		},
 		{
 			"name": "base-windows",
 			"hidden": true,
-			"inherits":["base"],
+			"inherits": ["base"],
 			"toolchainFile": "${sourceDir}/cmake/toolchains/windows.cmake",
 			"cacheVariables": {"DD25_TARGET_WINDOWS": "ON"},
-			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "Windows"}
+			"condition": {"type": "equals","lhs": "${hostSystemName}","rhs": "Windows"}
 		},
 		{
 			"name": "base-osx",
 			"hidden": true,
-			"inherits":["base"],
+			"inherits": ["base"],
+			"generator": "Xcode",
 			"toolchainFile": "${sourceDir}/cmake/toolchains/osx.cmake",
 			"cacheVariables": {"DD25_TARGET_OSX": "ON"},
-			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "macOS"}
+			"condition": {"type": "equals","lhs": "${hostSystemName}","rhs": "macOS"}
 		},
 		{
 			"name": "base-bsd",
 			"hidden": true,
-			"inherits":["base"],
+			"inherits": ["base"],
+			"generator": "Ninja",
 			"toolchainFile": "${sourceDir}/cmake/toolchains/bsd.cmake",
 			"cacheVariables": {"DD25_TARGET_BSD": "ON"},
-			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "FreeBSD"}
+			"condition": {"type": "equals","lhs": "${hostSystemName}","rhs": "FreeBSD"}
 		},
 		{
 			"name": "base-linux",
 			"hidden": true,
-			"inherits":["base"],
+			"inherits": ["base"],
+			"generator": "Ninja",
 			"toolchainFile": "${sourceDir}/cmake/toolchains/linux.cmake",
 			"cacheVariables": {"DD25_TARGET_LINUX": "ON"},
-			"condition": {"type": "equals", "lhs": "${hostSystemName}", "rhs": "Linux"}
+			"condition": {"type": "equals","lhs": "${hostSystemName}","rhs": "Linux"}
 		},
 		{
-			"name": "config-dreamcast",
+			"name": "cfg-dreamcast",
 			"inherits": ["base-dreamcast"],
 			"generator": "Ninja"
 		},
 		{
-			"name": "config-windows-10-x64",
-			"inherits": ["base-windows"],
-			"generator": "Visual Studio 17 2022",
-			"toolset": {"value": "v143"},
+			"name": "cfg-win-11-x64",
+			"inherits": ["base-windows","msvc-vs-2022"],
 			"architecture": "x64",
-			"cacheVariables": {"TARGET_WINDOWS_10":"ON", "TARGET_WINDOWS_VERSION":"0x0A00"}
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "10.0",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "10.0",
+				"TARGET_WINDOWS_11": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0A00"
+			}
 		},
 		{
-			"name": "config-windows-10-arm64",
-			"inherits": ["base-windows"],
-			"generator": "Visual Studio 17 2022",
-			"toolset": {"value": "v143"},
+			"name": "cfg-win-11-arm64",
+			"inherits": ["base-windows","msvc-vs-2022"],
 			"architecture": "ARM64",
-			"cacheVariables": {"TARGET_WINDOWS_10":"ON", "TARGET_WINDOWS_VERSION":"0x0A00"}
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "10.0",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "10.0",
+				"TARGET_WINDOWS_11": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0A00"
+			}
 		},
 		{
-			"name": "config-osx-x64",
-			"inherits": ["base-osx"],
-			"generator": "Xcode",
-			"toolset": {"value": "clang"},
-			"architecture": "m64",
-			"cacheVariables": {"TARGET_OSX":"ON"}
+			"name": "cfg-win-10-x64",
+			"inherits": ["base-windows","msvc-vs-2022"],
+			"architecture": "x64",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "10.0",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "10.0.19041.0",
+				"TARGET_WINDOWS_10": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0A00"
+			}
 		},
 		{
-			"name": "config-osx-arm64",
+			"name": "cfg-win-10-arm64",
+			"inherits": ["base-windows","msvc-vs-2022"],
+			"architecture": "ARM64",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "10.0",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "10.0.19041.0",
+				"TARGET_WINDOWS_10": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0A00"
+			}
+		},
+		{
+			"name": "cfg-win-8-1-x86",
+			"inherits": ["base-windows","msvc-vs-2022"],
+			"architecture": "Win32",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "6.3",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
+				"TARGET_WINDOWS_8_1": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0603"
+			}
+		},
+		{
+			"name": "cfg-win-8-1-x64",
+			"inherits": ["base-windows","msvc-vs-2022"],
+			"architecture": "x64",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "6.3",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
+				"TARGET_WINDOWS_8_1": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0603"
+			}
+		},
+		{
+			"name": "cfg-win-8-x86",
+			"inherits": ["base-windows","msvc-vs-2019"],
+			"architecture": "Win32",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "6.2",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
+				"TARGET_WINDOWS_8": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0602"
+			}
+		},
+		{
+			"name": "cfg-win-8-x64",
+			"inherits": ["base-windows","msvc-vs-2019"],
+			"architecture": "x64",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "6.2",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
+				"TARGET_WINDOWS_8": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0602"
+			}
+		},
+		{
+			"name": "cfg-win-7-x86",
+			"inherits": ["base-windows","msvc-vs-2019"],
+			"architecture": "Win32",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "6.1",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
+				"TARGET_WINDOWS_7": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0601"
+			}
+		},
+		{
+			"name": "cfg-win-7-x64",
+			"inherits": ["base-windows","msvc-vs-2019"],
+			"architecture": "x64",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "6.1",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
+				"TARGET_WINDOWS_7": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0601"
+			}
+		},
+		{
+			"name": "cfg-win-vista-x86",
+			"inherits": ["base-windows","msvc-vs-2017"],
+			"architecture": "Win32",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "6.0",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
+				"TARGET_WINDOWS_VISTA": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0600",
+				"NOTE_TO_SELF": "This shit isn't working"
+			}
+		},
+		{
+			"name": "cfg-win-vista-x64",
+			"inherits": ["base-windows","msvc-vs-2017"],
+			"architecture": "x64",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "6.0",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
+				"TARGET_WINDOWS_VISTA": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0600",
+				"NOTE_TO_SELF": "This shit isn't working"
+			}
+		},
+		{
+			"name": "cfg-win-xp-x86",
+			"inherits": ["base-windows","msvc-vs-2017"],
+			"toolset": "v141_xp",
+			"architecture": "Win32",
+			"cacheVariables": {
+				"CMAKE_SYSTEM_VERSION": "5.1",
+				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "7.1A",
+				"TARGET_WINDOWS_XP": "ON",
+				"TARGET_WINDOWS_VERSION": "0x0501",
+				"MSVC_TOOLSET": "v141_xp",
+				"NOTE_TO_SELF": "This shit isn't working"
+			}
+		},
+		{
+			"name": "cfg-osx-x64",
 			"inherits": ["base-osx"],
-			"generator": "Xcode",
-			"toolset": {"value": "clang"},
+			"architecture": "x86_64",
+			"cacheVariables": {
+				"TARGET_OSX": "ON"
+			}
+		},
+		{
+			"name": "cfg-osx-arm64",
+			"inherits": ["base-osx"],
 			"architecture": "arm64",
-			"cacheVariables": {"TARGET_OSX":"ON"}
+			"cacheVariables": {
+				"TARGET_OSX": "ON"
+			}
 		},
 		{
-			"name": "config-bsd-x64",
+			"name": "cfg-linux-x86",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-m32 -march=i686",
+				"CMAKE_CXX_FLAGS": "-m32 -march=i686"
+			}
+		},
+		{
+			"name": "cfg-linux-x64",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-m64 -march=x86-64-v3",
+				"CMAKE_CXX_FLAGS": "-m64 -march=x86-64-v3"
+			}
+		},
+		{
+			"name": "cfg-linux-arm",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-marm -march=armv7-a",
+				"CMAKE_CXX_FLAGS": "-marm -march=armv7-a"
+			}
+		},
+		{
+			"name": "cfg-linux-arm64",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-march=armv8-a -mcpu=sve",
+				"CMAKE_CXX_FLAGS": "-march=armv8-a -mcpu=sve"
+			}
+		},
+		{
+			"name": "cfg-linux-riscv64",
+			"inherits": ["base-linux"],
+			"generator": "Ninja",
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-march=rv64gcv -mabi=lp64d",
+				"CMAKE_CXX_FLAGS": "-march=rv64gcv -mabi=lp64d"
+			}
+		},
+		{
+			"name": "cfg-bsd-x86",
 			"inherits": ["base-bsd"],
 			"generator": "Ninja",
-			"architecture": "m64",
-			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_BSD":"ON"}
+			"cacheVariables": {
+				"TARGET_BSD": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-m32 -march=i686",
+				"CMAKE_CXX_FLAGS": "-m32 -march=i686"
+			}
 		},
 		{
-			"name": "config-bsd-arm64",
+			"name": "cfg-bsd-x64",
 			"inherits": ["base-bsd"],
 			"generator": "Ninja",
-			"architecture": "arm64",
-			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_BSD":"ON"}
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-m64 -march=x86-64-v3",
+				"CMAKE_CXX_FLAGS": "-m64 -march=x86-64-v3"
+			}
 		},
 		{
-			"name": "config-linux-x86",
-			"inherits": ["base-linux"],
+			"name": "cfg-bsd-arm",
+			"inherits": ["base-bsd"],
 			"generator": "Ninja",
-			"architecture": "m32",
-			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_LINUX":"ON"}
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-marm -march=armv7-a",
+				"CMAKE_CXX_FLAGS": "-marm -march=armv7-a"
+			}
 		},
 		{
-			"name": "config-linux-x64",
-			"inherits": ["base-linux"],
+			"name": "cfg-bsd-arm64",
+			"inherits": ["base-bsd"],
 			"generator": "Ninja",
-			"architecture": "m64",
-			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_LINUX":"ON"}
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-march=armv8-a -mcpu=sve",
+				"CMAKE_CXX_FLAGS": "-march=armv8-a -mcpu=sve"
+			}
 		},
 		{
-			"name": "config-linux-arm",
-			"inherits": ["base-linux"],
+			"name": "cfg-bsd-riscv64",
+			"inherits": ["base-bsd"],
 			"generator": "Ninja",
-			"architecture": "arm",
-			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_LINUX":"ON"}
-		},
-		{
-			"name": "config-linux-arm64",
-			"inherits": ["base-linux"],
-			"generator": "Ninja",
-			"architecture": "arm64",
-			"toolset": {"value": "gcc"},
-			"cacheVariables": {"TARGET_LINUX":"ON"}
+			"cacheVariables": {
+				"TARGET_LINUX": "ON",
+				"CMAKE_C_COMPILER":"gcc",
+				"CMAKE_CXX_COMPILER":"g++",
+				"CMAKE_C_FLAGS": "-march=rv64gcv -mabi=lp64d",
+				"CMAKE_CXX_FLAGS": "-march=rv64gcv -mabi=lp64d"
+			}
 		}
 	],
 	"buildPresets": [
-		{"name": "build-windows-10-x64", "configurePreset": "config-windows-10-x64", "configuration": "Release", "jobs": 0}
+		{"name": "build-dreamcast-debug",				"configurePreset": "cfg-dreamcast",		"configuration": "Debug"},
+		{"name": "build-dreamcast-release",				"configurePreset": "cfg-dreamcast",		"configuration": "Release"},
+		{"name": "build-dreamcast-relwithdebinfo",		"configurePreset": "cfg-dreamcast",		"configuration": "RelWithDebInfo"},
+		{"name": "build-dreamcast-minsizerel",			"configurePreset": "cfg-dreamcast",		"configuration": "MinSizeRel"},
+
+		{"name": "build-win-11-x64",			"configurePreset": "cfg-win-11-x64"},
+		{"name": "build-win-11-arm64",			"configurePreset": "cfg-win-11-arm64"},
+
+		{"name": "build-win-10-x64",			"configurePreset": "cfg-win-10-x64"},
+		{"name": "build-win-10-arm64",			"configurePreset": "cfg-win-10-arm64"},
+
+		{"name": "build-win-8-1-x86",			"configurePreset": "cfg-win-8-1-x86"},
+		{"name": "build-win-8-1-x64",			"configurePreset": "cfg-win-8-1-x64"},
+
+		{"name": "build-win-8-x86",				"configurePreset": "cfg-win-8-x86"},
+		{"name": "build-win-8-x64",				"configurePreset": "cfg-win-8-x64"},
+
+		{"name": "build-win-7-x86",				"configurePreset": "cfg-win-7-x86"},
+		{"name": "build-win-7-x64",				"configurePreset": "cfg-win-7-x64"},
+
+		{"name": "build-win-vista-x86",			"configurePreset": "cfg-win-vista-x86"},
+		{"name": "build-win-vista-x64",			"configurePreset": "cfg-win-vista-x64"},
+
+		{"name": "build-win-xp-x86",			"configurePreset": "cfg-win-xp-x86"},
+
+		{"name": "build-osx-x86_64",			"configurePreset": "cfg-osx-x64"},
+		{"name": "build-osx-arm64",				"configurePreset": "cfg-osx-arm64"},
+
+		{"name": "build-linux-x86",				"configurePreset": "cfg-linux-x86"},
+		{"name": "build-linux-x64",				"configurePreset": "cfg-linux-x64"},
+		{"name": "build-linux-arm",				"configurePreset": "cfg-linux-arm"},
+		{"name": "build-linux-arm64",			"configurePreset": "cfg-linux-arm64"},
+		{"name": "build-linux-riscv64",			"configurePreset": "cfg-linux-riscv64"},
+
+		{"name": "build-bsd-x86",				"configurePreset": "cfg-bsd-x86"},
+		{"name": "build-bsd-x64",				"configurePreset": "cfg-bsd-x64"},
+		{"name": "build-bsd-arm",				"configurePreset": "cfg-bsd-arm"},
+		{"name": "build-bsd-arm64",				"configurePreset": "cfg-bsd-arm64"},
+		{"name": "build-bsd-riscv64",			"configurePreset": "cfg-bsd-riscv64"}
 	],
 	"testPresets": [],
 	"packagePresets": [],

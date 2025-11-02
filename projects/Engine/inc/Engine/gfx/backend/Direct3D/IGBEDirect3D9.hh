@@ -4,29 +4,26 @@
 #pragma once
 
 //////////////////////////////////////////////////////////////////
-#ifndef DD25_ENGINE_GFX_COLOR_HH
-#define DD25_ENGINE_GFX_COLOR_HH
+#ifndef DD25_ENGINE_GFX_BACKEND_I_DIRECT3D_9_HH
+#define DD25_ENGINE_GFX_BACKEND_I_DIRECT3D_9_HH
 //////////////////////////////////////////////////////////////////
+
+#include "../../IGfxBackend.hh"
 
 //================================================================
 
-template <
-	typename	CRTP,
-	typename	T,
-	size_t		N
->
-class Color {
+class IGBEDirect3D9 : virtual IGfxBackend {
 public:
 	// Default Constructor
-	Color() = default;
+	IGBEDirect3D9() = default;
 
-	// Destructor
-	~Color() noexcept;
+	// Virtual Destructor
+	virtual ~IGBEDirect3D9() noexcept;
 
 private:
 
 };
 
 //////////////////////////////////////////////////////////////////
-#endif//DD25_ENGINE_GFX_COLOR_HH
+#endif//DD25_ENGINE_GFX_BACKEND_I_DIRECT3D_9_HH
 //////////////////////////////////////////////////////////////////

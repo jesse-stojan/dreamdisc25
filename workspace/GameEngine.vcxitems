@@ -22,6 +22,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\core.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\core\String.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\Engine.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\backend\Direct3D\IGBEDirect3D9.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\backend\OpenGLES\IGBEOpenGLES.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\backend\OpenGL\IGBEOpenGL.hh" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\backend\PowerVR\IGBEPowerVR.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\Color.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IBillboard.hh" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\projects\Engine\inc\Engine\gfx\IBrush.hh" />
