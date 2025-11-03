@@ -7,6 +7,8 @@
 #define EXIT_SUCCESS	0
 #endif//EXIT_SUCCESS
 
+#include <Engine/Engine.hh>
+
 // Entry Point
 int main(
 	int			argc,

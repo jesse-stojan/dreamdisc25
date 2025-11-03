@@ -1,3 +1,7 @@
+#================================================================
+# [Dream Disk 25]
+# ~/CMakeLists.txt
+#================================================================
 cmake_minimum_required(VERSION 3.31)
 
 if (NOT CMAKE_HOST_SYSTEM_PROCESSOR STREQUAL CMAKE_SYSTEM_PROCESSOR
@@ -9,8 +13,7 @@ endif()
 #----------------------------------------------------------------
 # Root Project
 #----------------------------------------------------------------
-project(DreamDisk25
-	LANGUAGES C CXX
+project(DreamDisk25 LANGUAGES C CXX
 	VERSION 0.0.1
 )
 
@@ -65,16 +68,18 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 #----------------------------------------------------------------
 # Include target cmake toolchain files
 #----------------------------------------------------------------
-if      (DD25_TARGET_DREAMCAST)
-	include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/dreamcast.cmake")
-elseif  (DD25_TARGET_WINDOWS)
-	include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/windows.cmake")
-elseif  (DD25_TARGET_OSX)
-	include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/osx.cmake")
-elseif  (DD25_TARGET_LINUX)
-	include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/linux.cmake")
-elseif  (DD25_TARGET_BSD)
-	include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/bsd.cmake")
+if (NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+	if      (DD25_TARGET_DREAMCAST)
+		include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/dreamcast.cmake")
+	elseif  (DD25_TARGET_WINDOWS)
+		include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/windows.cmake")
+	elseif  (DD25_TARGET_OSX)
+		include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/osx.cmake")
+	elseif  (DD25_TARGET_LINUX)
+		include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/linux.cmake")
+	elseif  (DD25_TARGET_BSD)
+		include("${CMAKE_CURRENT_LIST_DIR}/cmake/toolchains/bsd.cmake")
+	endif()
 endif()
 
 #----------------------------------------------------------------
@@ -88,6 +93,8 @@ endif()
 #----------------------------------------------------------------
 # Projects
 #----------------------------------------------------------------
+
+set(ENGINE_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/projects/Engine/inc)
 
 # Engine [Dreamcast & Desktop]
 if (DD25_BUILD_ENGINE)

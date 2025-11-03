@@ -1,9 +1,15 @@
+#================================================================
+# [Dream Disk 25] - Engine
+# ~/projects/Engine/CMakeLists.txt
+#================================================================
 set(TGT "DD25Engine")
 
 project(${TGT} LANGUAGES C CXX)
 
-set(HDR_DIR ${CMAKE_CURRENT_SOURCE_DIR}/inc)
-set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+set(INC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
+set(SRC ${CMAKE_CURRENT_SOURCE_DIR}/src)
+
+add_library(${TGT} SHARED)
 
 #----------------------------------------------------------------
 # Include target platform cmake files
@@ -12,6 +18,7 @@ if      (DD25_TARGET_DREAMCAST)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/dreamcast.cmake")
 elseif  (DD25_TARGET_WINDOWS)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/windows.cmake")
+	target_compile_features(${TGT} PRIVATE c_std_17)
 elseif  (DD25_TARGET_OSX)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/osx.cmake")
 elseif  (DD25_TARGET_LINUX)
@@ -20,8 +27,23 @@ elseif  (DD25_TARGET_BSD)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/bsd.cmake")
 endif()
 
-#target_include_directories(${TGT} PUBLIC ${HDR_DIR})
+#----------------------------------------------------------------
+# Include Directories
+#----------------------------------------------------------------
+target_include_directories(${TGT}
+	PUBLIC
+		${INC}
+)
 
-add_library(${TGT} SHARED
-	${SRC_DIR}/Engine.cpp
+#----------------------------------------------------------------
+# Source Files
+#----------------------------------------------------------------
+target_sources(${TGT}
+	PRIVATE
+		${SRC}/Engine.cpp
+	PUBLIC
+		FILE_SET HEADERS
+		BASE_DIRS inc
+		FILES
+			${INC}/Engine/Engine.hh
 )

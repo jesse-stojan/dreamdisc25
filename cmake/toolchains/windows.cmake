@@ -1,5 +1,6 @@
 #================================================================
-# windowz.cmake
+# [Dream Disk 25]
+# ~/cmake/toolchains/windows.cmake
 #================================================================
 set(CMAKE_SYSTEM_NAME Windows)
 
@@ -14,7 +15,7 @@ set(WIN32_WINNT_WIN11	0x0A00)
 #enable_language(C)
 #enable_language(CXX)
 
-if (MSVC)
+if (WIN32)
 	if 		(MSVC_TOOLSET STREQUAL "v143")
 		set(CMAKE_C_STANDARD 17)
 		set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -76,23 +77,25 @@ endif()
 #	)
 # endif()
 
-if		(DEFINED TARGET_WINDOWS_XP)
+if		(TARGET_WINDOWS_XP)
 	set(WINDOWS_VERSION		${WIN32_WINNT_XP})
-elseif	(DEFINED TARGET_WINDOWS_VISTA)
+elseif	(TARGET_WINDOWS_VISTA)
 	set(WINDOWS_VERSION		${WIN32_WINNT_VISTA})
-elseif	(DEFINED TARGET_WINDOWS_7)
+elseif	(TARGET_WINDOWS_7)
 	set(WINDOWS_VERSION		${WIN32_WINNT_WIN7})
-elseif	(DEFINED TARGET_WINDOWS_8)
+elseif	(TARGET_WINDOWS_8)
 	set(WINDOWS_VERSION		${WIN32_WINNT_WIN8})
-elseif	(DEFINED TARGET_WINDOWS_8_1)
+elseif	(TARGET_WINDOWS_8_1)
 	set(WINDOWS_VERSION		${WIN32_WINNT_WIN8_1})
-elseif	(DEFINED TARGET_WINDOWS_10)
+elseif	(TARGET_WINDOWS_10)
 	set(WINDOWS_VERSION		${WIN32_WINNT_WIN10})
-elseif	(DEFINED TARGET_WINDOWS_11)
+elseif	(TARGET_WINDOWS_11)
 	set(WINDOWS_VERSION		${WIN32_WINNT_WIN11}) # same SDK macro as Win10
 else()
-	set(WINDOWS_VERSION     0x0500)
+	set(WINDOWS_VERSION     ${WIN32_WINNT_XP})
 endif()
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /EHsc-")
 
 add_compile_options(
 	/Wall               # Warning Level
@@ -113,6 +116,8 @@ add_compile_options(
 	/Zc:__STDC__
 	/Zc:throwingNew-
 	/Zc:noexceptTypes
+	/Zc:wchar_t			# Treat wchar_t as built-in type
+	/fp:fast			# Set floating point model to `fast` 
 )
 
 add_link_options(
@@ -121,6 +126,7 @@ add_link_options(
 	/LTCG:incremental	# Use Fast Link Time Code Generation
 	/LARGEADDRESSAWARE	# For Windows XP/x86 targets, enable access to more than 2GB of RAM
 	#/CETCOMPAT			# CRT Shadow Stack Compatible, Marks executable image as compatible with Control-flow Enforcement Technology (CET) Shadow Stack
+	#/ASSEMBLYDEBUG		# Generate Debuggable Assembly?
 )
 
 add_compile_definitions(
@@ -129,6 +135,6 @@ add_compile_definitions(
 	NOMINMAX=1
 	#WIN32_LEAN_AND_MEAN=1
 	DD25_WINDOWS=1
-	UNICODE=1
 	_UNICODE=1
+	UNICODE=1
 )

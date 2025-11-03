@@ -99,8 +99,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "10.0",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "10.0",
-				"TARGET_WINDOWS_11": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0A00"
+				"TARGET_WINDOWS_11": "ON"
 			}
 		},
 		{
@@ -110,8 +109,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "10.0",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "10.0",
-				"TARGET_WINDOWS_11": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0A00"
+				"TARGET_WINDOWS_11": "ON"
 			}
 		},
 		{
@@ -121,8 +119,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "10.0",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "10.0.19041.0",
-				"TARGET_WINDOWS_10": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0A00"
+				"TARGET_WINDOWS_10": "ON"
 			}
 		},
 		{
@@ -132,8 +129,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "10.0",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "10.0.19041.0",
-				"TARGET_WINDOWS_10": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0A00"
+				"TARGET_WINDOWS_10": "ON"
 			}
 		},
 		{
@@ -143,8 +139,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "6.3",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
-				"TARGET_WINDOWS_8_1": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0603"
+				"TARGET_WINDOWS_8_1": "ON"
 			}
 		},
 		{
@@ -154,8 +149,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "6.3",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
-				"TARGET_WINDOWS_8_1": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0603"
+				"TARGET_WINDOWS_8_1": "ON"
 			}
 		},
 		{
@@ -165,8 +159,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "6.2",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
-				"TARGET_WINDOWS_8": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0602"
+				"TARGET_WINDOWS_8": "ON"
 			}
 		},
 		{
@@ -176,8 +169,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "6.2",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
-				"TARGET_WINDOWS_8": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0602"
+				"TARGET_WINDOWS_8": "ON"
 			}
 		},
 		{
@@ -187,8 +179,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "6.1",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
-				"TARGET_WINDOWS_7": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0601"
+				"TARGET_WINDOWS_7": "ON"
 			}
 		},
 		{
@@ -198,8 +189,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "6.1",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
-				"TARGET_WINDOWS_7": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0601"
+				"TARGET_WINDOWS_7": "ON"
 			}
 		},
 		{
@@ -209,9 +199,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "6.0",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
-				"TARGET_WINDOWS_VISTA": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0600",
-				"NOTE_TO_SELF": "This shit isn't working"
+				"TARGET_WINDOWS_VISTA": "ON"
 			}
 		},
 		{
@@ -221,9 +209,7 @@
 			"cacheVariables": {
 				"CMAKE_SYSTEM_VERSION": "6.0",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "8.1",
-				"TARGET_WINDOWS_VISTA": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0600",
-				"NOTE_TO_SELF": "This shit isn't working"
+				"TARGET_WINDOWS_VISTA": "ON"
 			}
 		},
 		{
@@ -235,9 +221,7 @@
 				"CMAKE_SYSTEM_VERSION": "5.1",
 				"CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION": "7.1A",
 				"TARGET_WINDOWS_XP": "ON",
-				"TARGET_WINDOWS_VERSION": "0x0501",
-				"MSVC_TOOLSET": "v141_xp",
-				"NOTE_TO_SELF": "This shit isn't working"
+				"MSVC_TOOLSET": "v141_xp"
 			}
 		},
 		{
