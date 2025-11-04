@@ -16,7 +16,6 @@ add_executable(${TGT})
 #----------------------------------------------------------------
 if      (DD25_TARGET_WINDOWS)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/windows.cmake")
-	target_compile_features(${TGT} PRIVATE c_std_17)
 elseif  (DD25_TARGET_OSX)
 	include("${CMAKE_CURRENT_LIST_DIR}/cmake/osx.cmake")
 elseif  (DD25_TARGET_LINUX)
