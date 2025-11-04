@@ -14,12 +14,13 @@
 | --- | --- |
 | [Falco&nbsp;Girgis](https://github.com/gyrovorbis) | [sh4zam&nbsp;library](https://github.com/gyrovorbis/sh4zam), guidance, and help, from setup to knowledge and implementation. |
 | [darcagn](https://github.com/darcagn) | Setup, troubleshooting, guidance, and great efforts not only to help this project, but multiple communities. |
-| [Axiom](#) | `TODO: Add Note, contributions to libGimbal and more.` |
+| [Axiom](https://github.com/suicvne) | `TODO: Add Note, contributions to libGimbal and more.` |
 | [Cypress](https://github.com/cypressru) | `TODO: Add Note, guidance and support, along with his efforts in the Dream Disk 25 game jam.` |
 | [GPFTroy](https://github.com/GPF) | His projects, research and development brought video on hardware to the next level, and his knowledge is greatly admired. |
 | [Haikuno](https://github.com/Haikuno) | `TODO: Add Note, contributions to sh4zam as well.` |
 | [heliodesic](https://github.com/davidscholberg) | `TODO: Add Note` |
 | [jvsTSX](https://github.com/jvsTSX) | `TODO: Add Note, VMU and other contributions and knowledge.` |
+| [dRxL](https://github.com/dfchil) | Tutorials and help using [sh4zam with PVR](https://github.com/dfchil/sh4zam_pvr). |
 
 ---
 
