@@ -6,10 +6,12 @@ set(TGT "DD25Editor")
 
 project(${TGT} LANGUAGES C CXX)
 
-set(INC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
+set(INC ${CMAKE_CURRENT_SOURCE_DIR}/inc/Editor)
 set(SRC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 add_executable(${TGT})
+
+add_dependencies(${TGT} DD25Engine)
 
 #----------------------------------------------------------------
 # Include target platform cmake files
@@ -37,11 +39,44 @@ target_include_directories(${TGT}
 #----------------------------------------------------------------
 # Header Files
 #----------------------------------------------------------------
+set(EDITOR_HEADERS
+	${INC}/Editor.hh
+)
+
+#----------------------------------------------------------------
+# Source Files
+#----------------------------------------------------------------
+set(EDITOR_SOURCES
+	${SRC}/Editor.cpp
+)
+
+# filter: Projects
+set_target_properties(${TGT} PROPERTIES FOLDER "Projects")
+
+# filter: Third-Party
+# set_target_properties(SH4ZAM	PROPERTIES FOLDER "Third-Party")
+
+source_group(
+	TREE ${CMAKE_CURRENT_SOURCE_DIR}/inc/Editor
+	PREFIX "Header Files"
+	FILES
+		${EDITOR_HEADERS}
+)
+
+source_group(
+	TREE ${CMAKE_CURRENT_SOURCE_DIR}/src
+	PREFIX "Source Files"
+	FILES
+		${EDITOR_SOURCES}
+)
+
+#----------------------------------------------------------------
+# Header Files
+#----------------------------------------------------------------
 target_sources(${TGT}
 	PRIVATE
-		${SRC}/Editor.cpp
-	PRIVATE
-		${INC}/Editor/Editor.hh
+		${EDITOR_SOURCES}
+		${EDITOR_HEADERS}
 )
 
 #----------------------------------------------------------------
@@ -49,5 +84,5 @@ target_sources(${TGT}
 #----------------------------------------------------------------
 target_link_libraries(${TGT}
 	PRIVATE
-		Engine
+		DD25Engine
 )

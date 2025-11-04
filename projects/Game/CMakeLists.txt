@@ -6,10 +6,12 @@ set(TGT "DD25Game")
 
 project(${TGT} LANGUAGES C CXX)
 
-set(INC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
+set(INC ${CMAKE_CURRENT_SOURCE_DIR}/inc/Game)
 set(SRC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 add_executable(${TGT})
+
+add_dependencies(${TGT} DD25Engine)
 
 #----------------------------------------------------------------
 # Include target platform cmake files
@@ -39,11 +41,44 @@ target_include_directories(${TGT}
 #----------------------------------------------------------------
 # Header Files
 #----------------------------------------------------------------
+set(GAME_HEADERS
+	${INC}/Game.hh
+)
+
+#----------------------------------------------------------------
+# Source Files
+#----------------------------------------------------------------
+set(GAME_SOURCES
+	${SRC}/Game.cpp
+)
+
+# filter: Projects
+set_target_properties(${TGT}	PROPERTIES FOLDER "Projects")
+
+# filter: Third-Party
+# set_target_properties(SH4ZAM	PROPERTIES FOLDER "Third-Party")
+
+source_group(
+	TREE ${CMAKE_CURRENT_SOURCE_DIR}/inc/Game
+	PREFIX "Header Files"
+	FILES
+		${GAME_HEADERS}
+)
+
+source_group(
+	TREE ${CMAKE_CURRENT_SOURCE_DIR}/src
+	PREFIX "Source Files"
+	FILES
+		${GAME_SOURCES}
+)
+
+#----------------------------------------------------------------
+# Header Files
+#----------------------------------------------------------------
 target_sources(${TGT}
 	PRIVATE
-		${SRC}/Game.cpp
-	PRIVATE
-		${INC}/Game/Game.hh
+		${GAME_SOURCES}
+		${GAME_HEADERS}
 )
 
 #----------------------------------------------------------------
@@ -51,7 +86,7 @@ target_sources(${TGT}
 #----------------------------------------------------------------
 target_link_libraries(${TGT}
 	PRIVATE
-		Engine
+		DD25Engine
 )
 
 #----------------------------------------------------------------

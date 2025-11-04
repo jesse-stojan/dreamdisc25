@@ -117,10 +117,18 @@ target_include_directories(${TGT}
 		${INC}
 )
 
-source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR}
+source_group(
+	TREE ${CMAKE_CURRENT_SOURCE_DIR}/inc
+	PREFIX "Header Files"
+	FILES
+		${ENGINE_HEADERS_PUBLIC}
+)
+
+source_group(
+	TREE ${CMAKE_CURRENT_SOURCE_DIR}/src
+	PREFIX "Source Files"
 	FILES
 		${ENGINE_SOURCES}
-		${ENGINE_HEADERS_PUBLIC}
 )
 
 #----------------------------------------------------------------
@@ -134,3 +142,9 @@ target_sources(${TGT}
 		BASE_DIRS inc
 		FILES ${ENGINE_HEADERS_PUBLIC}
 )
+
+# filter: Projects
+set_target_properties(${TGT} PROPERTIES FOLDER "Projects")
+
+# filter: Third-Party
+# set_target_properties(SH4ZAM	PROPERTIES FOLDER "Third-Party")
