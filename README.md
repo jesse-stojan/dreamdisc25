@@ -8,6 +8,25 @@
 # TODO: Fill out the README.md, include documentation under `/docs`.
 ```
 
+# Credit and Special Thanks
+
+| Name | |
+| --- | --- |
+| [Falco&nbsp;Girgis](https://github.com/gyrovorbis) | [sh4zam&nbsp;library](https://github.com/gyrovorbis/sh4zam), guidance, and help, from setup to knowledge and implementation. |
+| [darcagn](https://github.com/darcagn) | Setup, troubleshooting, guidance, and great efforts not only to help this project, but multiple communities. |
+| [Axiom](#) | `TODO: Add Note, contributions to libGimbal and more.` |
+| [Cypress](https://github.com/cypressru) | `TODO: Add Note, guidance and support, along with his efforts in the Dream Disk 25 game jam.` |
+| [GPFTroy](https://github.com/GPF) | His projects, research and development brought video on hardware to the next level, and his knowledge is greatly admired. |
+| [Haikuno](https://github.com/Haikuno) | `TODO: Add Note, contributions to sh4zam as well.` |
+| [heliodesic](https://github.com/davidscholberg) | `TODO: Add Note` |
+| [jvsTSX](https://github.com/jvsTSX) | `TODO: Add Note, VMU and other contributions and knowledge.` |
+
+---
+
+<p style="text-align:center !important;">Special thanks to the entire community of developers and enthusiasts that have paved the way for us all, providing tooling, documentation, support, and their time. Thanks goes to all of you for your great passion and contributions to each community.</p>
+
+---
+
 ## [License](./LICENSE)
 ```
 MIT License

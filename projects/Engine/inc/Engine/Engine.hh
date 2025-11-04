@@ -10,6 +10,10 @@
 
 #include "core/core.hh"
 
+#ifdef  __DREAMCAST__
+#include <sh4zam/shz_sh4zam.hpp>
+#endif//__DREAMCAST__
+
 //================================================================
 
 //TODO: Game Engine Stuff Here..
