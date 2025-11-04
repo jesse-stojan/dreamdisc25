@@ -1,0 +1,3 @@
+[submodule "third-party/sh4zam"]
+	path = third-party/sh4zam
+	url = https://github.com/gyrovorbis/sh4zam.git
