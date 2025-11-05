@@ -31,7 +31,7 @@ public:
 	}
 
 	// Destructor
-	~Array() NOEXCEPT {
+	~Array() noexcept {
 		this->clear();
 	}
 

@@ -20,6 +20,7 @@ set(ENGINE_HEADERS_PUBLIC
 	# # ~/inc/audio
 	# ${INC}/audio/TODO.hh
 	# ~/inc/core
+	${INC}/core/core.hh
 	${INC}/core/Array.hh
 	${INC}/core/concepts.hh
 	${INC}/core/String.hh

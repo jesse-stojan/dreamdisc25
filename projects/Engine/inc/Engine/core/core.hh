@@ -58,42 +58,6 @@
 #endif// MSVC, Clang, GCC
 
 //================================================================
-
-#ifndef EXTERN_C_BEGIN
-#define EXTERN_C_BEING	extern "C" {
-#endif//EXTERN_C_BEGIN
-
-#ifndef EXTERN_C_END
-#define EXTERN_C_END	}
-#endif//EXTERN_C_END
-
-#ifndef EXTERN_C
-#define EXTERN_C		extern "C"
-#endif//EXTERN_C
-
-//================================================================
-
-#ifndef NODISCARD
-#define NODISCARD		[[nodiscard]]
-#endif//NODISCARD
-
-#ifndef NOEXCEPT
-#define NOEXCEPT		noexcept
-#endif//NOEXCEPT
-
-#ifndef PURE
-#define PURE			= 0
-#endif//PURE
-
-#ifndef VIRTUAL
-#define VIRTUAL			virtual
-#endif//VIRTUAL
-
-#ifndef OVERRIDE
-#define OVERRIDE		override
-#endif//OVERRIDE
-
-//================================================================
 // C++ Version
 //================================================================
 
@@ -144,6 +108,38 @@
 #define CXX_VERSION		CXX_VERSION_03
 #endif//CXX_VERSION
 #endif//__cplusplus
+
+//================================================================
+
+#ifndef EXTERN_C_BEGIN
+#define EXTERN_C_BEING	extern "C" {
+#endif//EXTERN_C_BEGIN
+
+#ifndef EXTERN_C_END
+#define EXTERN_C_END	}
+#endif//EXTERN_C_END
+
+#ifndef EXTERN_C
+#define EXTERN_C		extern "C"
+#endif//EXTERN_C
+
+//================================================================
+
+#ifndef NODISCARD
+//NOTE:
+// This attribute was introduced in C++17
+// C++20 adds an optional `[[nodiscard("reason")]]
+#define NODISCARD		[[nodiscard]]
+#endif//NODISCARD
+
+#ifndef NORETURN
+//NOTE: Introduced in C++11
+#define NORETURN		[[noreturn]]
+#endif//NORETURN
+
+#ifndef PURE
+#define PURE			= 0
+#endif//PURE
 
 //================================================================
 
