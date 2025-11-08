@@ -67,7 +67,7 @@
 			"generator": "Xcode",
 			"toolchainFile": "${sourceDir}/cmake/toolchains/osx.cmake",
 			"cacheVariables": {"DD25_TARGET_OSX": "ON"},
-			"condition": {"type": "equals","lhs": "${hostSystemName}","rhs": "macOS"}
+			"condition": {"type": "equals","lhs": "${hostSystemName}","rhs": "Darwin"}
 		},
 		{
 			"name": "base-bsd",
@@ -227,17 +227,19 @@
 		{
 			"name": "cfg-osx-x64",
 			"inherits": ["base-osx"],
-			"architecture": "x86_64",
 			"cacheVariables": {
-				"TARGET_OSX": "ON"
+				"TARGET_OSX": "ON",
+				"CMAKE_OSX_ARCHITECTURES":"x86_64",
+				"CMAKE_OSX_DEPLOYMENT_TARGET":"13.0"
 			}
 		},
 		{
 			"name": "cfg-osx-arm64",
 			"inherits": ["base-osx"],
-			"architecture": "arm64",
 			"cacheVariables": {
-				"TARGET_OSX": "ON"
+				"TARGET_OSX": "ON",
+				"CMAKE_OSX_ARCHITECTURES":"arm64",
+				"CMAKE_OSX_DEPLOYMENT_TARGET":"13.0"
 			}
 		},
 		{

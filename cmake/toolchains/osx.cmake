@@ -18,17 +18,17 @@ set(CMAKE_CXX_STANDARD                  20)
 set(CMAKE_CXX_STANDARD_REQUIRED         ON)
 set(CMAKE_CXX_EXTENSIONS                OFF)
 
-# Objective-C
-enable_language(OBJC)
-set(CMAKE_OBJC_STANDARD                 17)
-set(CMAKE_OBJC_STANDARD_REQUIRED        ON)
-set(CMAKE_OBJC_EXTENSIONS               OFF)
+# # Objective-C
+# enable_language(OBJC)
+# set(CMAKE_OBJC_STANDARD                 17)
+# set(CMAKE_OBJC_STANDARD_REQUIRED        ON)
+# set(CMAKE_OBJC_EXTENSIONS               OFF)
 
-# Objective-C++
-enable_language(OBJCXX)
-set(CMAKE_OBJCXX_STANDARD               20)
-set(CMAKE_OBJCXX_STANDARD_REQUIRED      ON)
-set(CMAKE_OBJCXX_EXTENSIONS             OFF)
+# # Objective-C++
+# enable_language(OBJCXX)
+# set(CMAKE_OBJCXX_STANDARD               20)
+# set(CMAKE_OBJCXX_STANDARD_REQUIRED      ON)
+# set(CMAKE_OBJCXX_EXTENSIONS             OFF)
 
 ##----------------------------------------------------------------
 ## Compilers
@@ -64,13 +64,3 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang" OR CMAKE_C_COMPILER_ID STREQUAL 
 		"-Wno-deprecated-gl-apis"               # Apple - OpenGL API warnings
 	)
 endif()
-
-#----------------------------------------------------------------
-# Link Frameworks:
-#----------------------------------------------------------------
-target_link_libraries(${PROJECT_NAME} PRIVATE
-	"-framework OpenGL"
-	"-framework Cocoa"
-	"-framework IOKit"
-	"-framework CoreVideo"
-)
